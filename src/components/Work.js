@@ -2,15 +2,21 @@
 
 
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { FaEye, FaGithub } from 'react-icons/fa';
 import { projects } from '../constants';
 
-export function WorkExample({ title, tags, desc, img, repo, link }) {
+export function WorkExample({ id, title, tags, desc, img, repo, link }) {
+  const navigate = useNavigate();
   
   const output = tags.map((tag, index) => <p className='tag' key={index}>{tag}</p>);
 
+  const HandleNavigation = () => {
+    return navigate(`/project/${id}`);
+  }
+  
   return (
-  <div className='col-4' id="project">
+  <div className='col-4' id="project" onClick={HandleNavigation}>
     <div className='w-100' id="asset-img">
     <img src={img} 
          className="w-100 rounded-2 mb-2 h-100 asst-img" 
@@ -20,7 +26,7 @@ export function WorkExample({ title, tags, desc, img, repo, link }) {
     
     <h5 className='fw-bold txt my-2 w-100'>{title}</h5>
     
-    <div className='d-flex flex-row flex-warp'>
+    <div className='d-flex flex-row flex-warp overflow-hidden'>
     {output.slice(0, 4)} 
     {output.length > 4 && <p className='tag'>+{output.length - 4}</p>}
     </div>
@@ -65,6 +71,7 @@ function Work() {
                  img={project.img} 
                  repo={project.repo} 
                  link={project.link}
+                 id={project.id}
                  />
   ));
 

@@ -138,3 +138,27 @@ body {
   letter-spacing: -7px;
   font-weight: bold;
 }
+.title {
+  font-size: 7rem;
+  font-weight: bold;
+  letter-spacing: -10px;
+}
+#proj-img {
+  width: 95%;
+}
+.desc {
+  font-size: 1.2rem;
+  line-height: 25px;
+  letter-spacing: -1.5px;
+}
+#test {
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+}
+.more-img {
+  width: 100%;
+}
+#bottom-footer {
+  margin-top: 300px;
+}

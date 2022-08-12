@@ -11,7 +11,10 @@ const projects = [
     desc: `Calc App was made with Angular. 
     This project was generated with 
     Angular CLI version 1.11.1`,
+    more: `Quickly manage the layout, alignment, and sizing of grid columns, navigation, components, and more with a full suite of responsive flexbox utilities. For more complex implementations, custom CSS may be necessary.`,
+    role: 'Full-Stack',
     img: assets.img2,
+    imgs: [assets.img2, assets.img2, assets.img2, assets.img2],
     repo: 'https://',
     link: 'https://'
   },
@@ -22,7 +25,10 @@ const projects = [
     desc: `Calc App was made with Angular. 
     This project was generated with 
     Angular CLI version 1.11.1`,
+    more: `Quickly manage the layout, alignment, and sizing of grid columns, navigation, components, and more with a full suite of responsive flexbox utilities. For more complex implementations, custom CSS may be necessary.`,
+    role: 'Front-end',
     img: assets.img2,
+    imgs: [assets.img2, assets.img2, assets.img2, assets.img2],
     repo: 'https://',
     link: 'https://'
   },
@@ -33,7 +39,10 @@ const projects = [
     desc: `Calc App was made with Angular. 
     This project was generated with 
     Angular CLI version 1.11.1`,
+    more: `Quickly manage the layout, alignment, and sizing of grid columns, navigation, components, and more with a full suite of responsive flexbox utilities. For more complex implementations, custom CSS may be necessary.`,
+    role: 'Back-end',
     img: assets.img2,
+    imgs: [assets.img2, assets.img2, assets.img2, assets.img2],
     repo: 'https://',
     link: 'https://'
   }
