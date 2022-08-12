@@ -5,5 +5,101 @@ body {
 }
 * {
   box-sizing: border-box;
-  transition: 1s ease all;
+  transition: 0.4s ease all;
+}
+.btn1 {
+  border: 2px solid black;
+  border-radius: 3px;
+  padding: 8px 30px;
+  background-color: black;
+  color: white;
+}
+.btn2 {
+  border-radius: 3px;
+  padding: 8px 30px;
+  background-color: white;
+  color: black;
+  border: 2px solid lightgray;
+}
+#text1 {
+  letter-spacing: -2px;
+  font-size: 3rem;
+}
+#text2 {
+  font-size: 0.9rem;
+  line-height: 18px;
+}
+#logo {
+  letter-spacing: -3px;
+}
+.txt {
+  letter-spacing: -2px;
+}
+#work-text {
+  font-size: 0.9rem;
+  letter-spacing: -0.5px;
+  line-height: 15px;
+}
+.tag, .tags {
+  font-size: 0.7rem;
+  border: 0px solid black;
+  display: inline;
+  padding: 5px 10px;
+  margin-right: 2px;
+  border-radius: 30px;
+  background-color: rgb(238, 238, 238);
+}
+.tags {
+  font-size: 0.9rem;
+  margin: 0px;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.tags:hover {
+  background-color: rgb(214, 214, 214);
+}
+.example-text {
+  font-size: 0.8rem;
+  line-height: 15px;
+}
+.btn3 {
+  border: 2px solid black;
+  font-size: 0.7rem;
+  background-color: black;
+  color: white;
+}
+.btn4 {
+  border: 0px solid lightgrey;
+  font-size: 0.7rem;
+}
+#asset-img {
+  /* height: 160px; */
+  height: auto;
+}
+.asst-img {
+  object-fit: contain;
+}
+#project {
+  cursor: pointer;
+}
+#project:hover {
+  transform: scale(1.05);
+}
+#resume-text {
+  font-size: 0.9rem;
+  line-height: 18px;
+}
+.resume {
+  font-size: 4rem;
+}
+.bt-txt {
+  line-height: 19px;
+}
+#floatingTextarea2 {
+  height: 300px;
+  resize: none;
 }
