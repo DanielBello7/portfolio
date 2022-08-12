@@ -1,26 +1,22 @@
 
 
 
-import Header from './components/Header';
-import Landing from './components/Landing';
-import Work from './components/Work';
-import Resume from './components/Resume';
-import Contact from './components/Contact';
+import Home from './routes/Home.routes';
+import Project from './routes/Project.routes';
+import Default from './routes/Default.routes';
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-  <main className="container-xl w-100 d-flex flex-column overflow-hidden">
-  <Header />
-  <br /><br />
-  <Landing />
-  <br /><br />
-  <Work />
-  <br /><br />
-  <Resume />
-  <br /><br />
-  <Contact />
-  </main>
-  );
+  <Routes>
+  <Route path='/' element={<Home />} />
+  <Route path='/home' element={<Home />} />
+  <Route path='/project' element={<Project />}>
+  <Route path=':projectID' element={<Project />} />
+  </Route>
+  <Route path='*' element={<Default />} />
+  </Routes>
+  )
 }
 
 export default App;

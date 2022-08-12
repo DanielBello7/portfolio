@@ -103,3 +103,38 @@ body {
   height: 300px;
   resize: none;
 }
+#my-email {
+  letter-spacing: -1px;
+  cursor: pointer;
+}
+#my-email:hover {
+  background-color: black;
+  color: white;
+}
+#center-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 300px;
+  background-color: black;
+}
+#user-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 300px;
+  object-fit: cover;
+}
+#error {
+  font-size: 8rem;
+  letter-spacing: -15px;
+}
+#sorry {
+  letter-spacing: -4px;
+}
+.sorry-txt {
+  letter-spacing: -1px;
+}
+#select-another {
+  font-size: 4rem;
+  letter-spacing: -7px;
+  font-weight: bold;
+}

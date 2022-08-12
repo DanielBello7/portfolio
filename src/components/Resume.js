@@ -3,6 +3,7 @@
 
 import { experience } from '../constants';
 import { FaDownload } from 'react-icons/fa';
+import { assets } from '../constants';
 
 
 function WorkExperience({ title, location, period }) {
@@ -51,12 +52,23 @@ function Resume() {
     </p>
     </div>
 
-    <div className='col-5 my-5 text-center'>
-    <h3 className='h1 txt fw-bold bg-dark text-white d-inline'>Education</h3>
-    <h5 className='fw-bold txt h4 mt-5'>B.Eng Computer Engineering</h5>
-    <h5 className='txt h4'>Ekiti State University</h5>
-    <h5 className='txt h5'>2015 - 2019</h5>
+    <div className='w-100 d-flex flex-row'>
+    <div className='col-4'></div>
+  
+    <div className='col-4'>
+      <div className='my-5 text-center'>
+      <h3 className='h1 txt fw-bold bg-dark text-white d-inline'>Education</h3>
+      <h5 className='fw-bold txt h4 mt-5'>B.Eng Computer Engineering</h5>
+      <h5 className='txt h4'>Ekiti State University</h5>
+      <h5 className='txt h5'>2015 - 2019</h5>
+      </div>
     </div>
+
+    <div className='col-4 d-flex justify-content-center align-items-center'>
+    <div id="center-img"><img src={assets.img1} id="user-img" alt="user-img"/></div>
+    </div>
+    </div>
+    
 
     <div className='col-9 my-5 text-center'>
     <h3 className='h1 txt fw-bold bg-dark text-white d-inline'>Work Experience</h3>
@@ -65,7 +77,7 @@ function Resume() {
 
     <div className='col-9 my-5 text-center'>
     <h3 className='h1 txt fw-bold bg-dark text-white d-inline'>Skills and Tools</h3>
-    <div className='mt-5 w-100 row gx-4 m-0 text-start'>
+    <div className='mt-5 w-100 row gx-4 m-0 text-center'>
     {skillsOutput}
     </div>
     </div>
