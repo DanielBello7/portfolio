@@ -4,6 +4,7 @@
 import { experience } from '../constants';
 import { FaDownload } from 'react-icons/fa';
 import { assets } from '../constants';
+import DotsBox from './DotsBox';
 
 
 function WorkExperience({ title, location, period }) {
@@ -42,7 +43,17 @@ function Resume() {
   return (
   <div className='my-5 d-flex flex-column align-items-center'>
     <div className='col-12 col-md-7 col-lg-7 text-center mb-5'>
-    <h3 className='h1 txt fw-bold resume'><a id="resume" href='#!'>Resume</a></h3>
+
+    <div className='w-100 position-relative'>
+      <h3 className='h1 txt fw-bold resume'>
+      <div id="skewed"></div>
+      <div id="handle">
+      <DotsBox amount={133} color={"rgb(0, 0, 0, 0.2)"} height={"150px"} width={"250px"}/>
+      </div>
+      <a id="resume" href='#!' className='text-decoration-none text-dark'>Resume</a>
+      </h3>
+    </div>
+
     <p className='text-center text-muted' id="resume-text">
     My journey so far as a software engineer, 
     specializing in full-stack software development 

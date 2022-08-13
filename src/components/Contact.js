@@ -54,7 +54,9 @@ function Contact() {
   return (
   <div className='text-center mb-5 d-flex flex-column align-items-center'>
     <div className='col-12 col-md-8 col-lg-8'>
-    <h1 className='fw-bold resume txt'><a id="contact" href='#!'>Contact</a></h1>
+    <h1 className='fw-bold resume txt'>
+    <a id="contact" href='#!' className='text-decoration-none text-dark'>Contact</a>
+    </h1>
 
     <p className='m-0 p-0 text-muted bt-txt'>React out to me.</p>
     <p className='m-0 p-0 text-muted bt-txt'>

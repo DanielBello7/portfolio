@@ -48,8 +48,10 @@ export function WorkExample({ id, title, tags, desc, img, repo, link }) {
 export function WorkIntro() {
   return (
   <div className='d-flex flex-column justify-content-center align-items-center'>
-  <h3 className='h1 fw-bold txt resume'><a id="work" href='#!'>Work</a></h3>
-  <p className='text-muted col-7 text-center' id="work-text">
+  <h3 className='h1 fw-bold txt resume'>
+  <a id="work" href='#!' className='text-decoration-none text-dark'>Work</a>
+  </h3>
+  <p className='text-muted col-12 col-md-7 col-lg-7 text-center' id="work-text">
   Check my commercial and non commercial projects. 
   If you have any questions feel free to ask me for more information.
   </p>
@@ -61,7 +63,7 @@ function Work() {
   
   const [selected, setSelected] = useState(projects);
 
-  const tabs = ['All', 'React', 'Vue', 'Java'];
+  const tabs = ['All', 'React', 'Vue', 'Java', 'NodeJS', 'Express', 'React-Native'];
 
   const output = selected.map(project => (
     <WorkExample key={project.id} 
@@ -84,7 +86,7 @@ function Work() {
       return setSelected(all);
     }
 
-    return <p className='tags' key={index} onClick={HandleSelection}>
+    return <p className='tags mb-2 mb-md-0 mb-lg-0' key={index} onClick={HandleSelection}>
            {tab} ({tab === 'All' ? projects.length : amount.length})
            </p>
   });
@@ -92,7 +94,7 @@ function Work() {
   return (
   <div className='d-flex flex-column my-5 align-items-center'>
   <WorkIntro />
-  <div className='mt-5 mb-3 d-flex flex-row'>{tabOutput}</div>
+  <div className='mt-5 mb-3 d-flex flex-row overflow-hidden flex-warp align-items-center justify-content-center' id="tabsLine">{tabOutput}</div>
   <div className='col-12 col-md-12 col-lg-9 my-4 d-flex flex-row flex-warp'>
   <div className='w-100 m-0 p-0 row g-5'>{output}</div>
   </div>
