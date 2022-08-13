@@ -16,7 +16,7 @@ export function WorkExample({ id, title, tags, desc, img, repo, link }) {
   }
   
   return (
-  <div className='col-4' id="project" onClick={HandleNavigation}>
+  <div className='col-12 col-md-4 col-lg-4' id="project" onClick={HandleNavigation}>
     <div className='w-100' id="asset-img">
     <img src={img} 
          className="w-100 rounded-2 mb-2 h-100 asst-img" 
@@ -48,7 +48,7 @@ export function WorkExample({ id, title, tags, desc, img, repo, link }) {
 export function WorkIntro() {
   return (
   <div className='d-flex flex-column justify-content-center align-items-center'>
-  <h3 className='h1 fw-bold txt resume'><a id="work">Work</a></h3>
+  <h3 className='h1 fw-bold txt resume'><a id="work" href='#!'>Work</a></h3>
   <p className='text-muted col-7 text-center' id="work-text">
   Check my commercial and non commercial projects. 
   If you have any questions feel free to ask me for more information.
@@ -93,8 +93,8 @@ function Work() {
   <div className='d-flex flex-column my-5 align-items-center'>
   <WorkIntro />
   <div className='mt-5 mb-3 d-flex flex-row'>{tabOutput}</div>
-  <div className='col-9 my-4 d-flex flex-row flex-warp'>
-  <div className='w-100 row g-5'>{output}</div>
+  <div className='col-12 col-md-12 col-lg-9 my-4 d-flex flex-row flex-warp'>
+  <div className='w-100 m-0 p-0 row g-5'>{output}</div>
   </div>
   </div>
   );

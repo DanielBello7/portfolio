@@ -11,7 +11,7 @@ function EmptyProject() {
   <Header />
   <br /><br /><br />
   <main className="w-100 my-5 d-flex flex-column align-items-center">
-  <h1 className="col-8 text-center" id="select-another">
+  <h1 className="col-12 col-md-10 col-lg-8 text-center" id="select-another">
   Sorry, the project you have selected doesn't exist. Please select another one.
   </h1>
   <Link to="/" className="btn btn-dark d-flex flex-row align-items-center px-4 my-3 py-2">

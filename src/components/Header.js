@@ -30,7 +30,7 @@ export default function Header() {
   <header className="w-100 d-flex flex-column flex-md-row flex-lg-row justify-content-between align-items-center pt-3 pb-3">
   <Logo />
 
-  <div className="d-flex flex-row">
+  <div className="d-flex flex-row my-3 my-md-0 my-lg-0">
   <a href="#work" className='btn'>Work</a>
   <a href="/home/#resume" className='btn ms-lg-5'>Resume</a>
   <a href="#contact" className='btn ms-lg-5'>Contact</a>

@@ -8,7 +8,7 @@ import { assets } from '../constants';
 
 function WorkExperience({ title, location, period }) {
   return (
-  <div className='col-4'>
+  <div className='col-12 col-md-4 col-lg-4'>
   <h5 className='fw-bold txt h4 mt-5'>{title}</h5>
   <h5 className='txt h4'>{location}</h5>
   <h5 className='txt h5'>{period}</h5>
@@ -41,8 +41,8 @@ function Resume() {
 
   return (
   <div className='my-5 d-flex flex-column align-items-center'>
-    <div className='col-7 text-center mb-5'>
-    <h3 className='h1 txt fw-bold resume'><a id="resume">Resume</a></h3>
+    <div className='col-12 col-md-7 col-lg-7 text-center mb-5'>
+    <h3 className='h1 txt fw-bold resume'><a id="resume" href='#!'>Resume</a></h3>
     <p className='text-center text-muted' id="resume-text">
     My journey so far as a software engineer, 
     specializing in full-stack software development 
@@ -52,10 +52,10 @@ function Resume() {
     </p>
     </div>
 
-    <div className='w-100 d-flex flex-row'>
-    <div className='col-4'></div>
+    <div className='w-100 d-flex flex-column flex-md-row flex-lg-row'>
+    <div className='col-0 col-md-4 col-lg-4'></div>
   
-    <div className='col-4'>
+    <div className='col-12 col-md-4 col-lg-4'>
       <div className='my-5 text-center'>
       <h3 className='h1 txt fw-bold bg-dark text-white d-inline'>Education</h3>
       <h5 className='fw-bold txt h4 mt-5'>B.Eng Computer Engineering</h5>
@@ -64,18 +64,18 @@ function Resume() {
       </div>
     </div>
 
-    <div className='col-4 d-flex justify-content-center align-items-center'>
+    <div className='col-12 col-md-4 col-lg-4 d-flex justify-content-center align-items-center'>
     <div id="center-img"><img src={assets.img1} id="user-img" alt="user-img"/></div>
     </div>
     </div>
     
 
-    <div className='col-9 my-5 text-center'>
+    <div className='col-12 col-md-12 col-lg-9 my-5 text-center'>
     <h3 className='h1 txt fw-bold bg-dark text-white d-inline'>Work Experience</h3>
     <div className='mt-3 w-100 row gx-4 m-0 justify-content-between'>{output}</div>
     </div>
 
-    <div className='col-9 my-5 text-center'>
+    <div className='col-12 col-md-9 col-lg-9 my-5 text-center'>
     <h3 className='h1 txt fw-bold bg-dark text-white d-inline'>Skills and Tools</h3>
     <div className='mt-5 w-100 row gx-4 m-0 text-center'>
     {skillsOutput}

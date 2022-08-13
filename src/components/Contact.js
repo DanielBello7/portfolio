@@ -39,6 +39,8 @@ function Contact() {
         message: messageRef.current.value
       }
 
+      console.log(data);
+
       setLoading(false);
       HandleShow("Message sent successfully", true);
       return event.target.reset();
@@ -51,8 +53,8 @@ function Contact() {
 
   return (
   <div className='text-center mb-5 d-flex flex-column align-items-center'>
-    <div className='col-8'>
-    <h1 className='fw-bold resume txt'><a id="contact">Contact</a></h1>
+    <div className='col-12 col-md-8 col-lg-8'>
+    <h1 className='fw-bold resume txt'><a id="contact" href='#!'>Contact</a></h1>
 
     <p className='m-0 p-0 text-muted bt-txt'>React out to me.</p>
     <p className='m-0 p-0 text-muted bt-txt'>
@@ -63,10 +65,10 @@ function Contact() {
     <p className='m-0 p-0 text-muted bt-txt'>I will reply as soon as possible.</p>
     </div>
 
-    <div className='w-100 d-flex flex-row'>
-    <div className='col-4'></div>
+    <div className='w-100 d-flex flex-column flex-md-row flex-lg-row'>
+    <div className='col-0 col-md-3 col-lg-4'></div>
 
-    <div className='col-4'>
+    <div className='col-12 col-md-6 col-lg-4'>
       <form className='text-start my-5 d-flex flex-column' onSubmit={HandleSubmit}>
       <div className="form-floating mb-3 bg-light rounded-3">
       <input type="email" 
@@ -115,7 +117,7 @@ function Contact() {
       </form>
     </div>
 
-    <div className='col-4 d-flex flex-column align-items-center justify-content-center'>
+    <div className='col-12 col-md-3 col-lg-4 d-flex flex-column align-items-center justify-content-center p-1 overflow-hidden'>
     <h4 className='fw-bold bg-dark text-white'>Let's Talk</h4>
     <h5 id="my-email">
     gokebello@gmail.com <FaArrowRight size={15}/>

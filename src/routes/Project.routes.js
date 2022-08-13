@@ -20,8 +20,8 @@ function Project() {
   });
 
   const imgs = project?.imgs?.map((img, index) => (
-    <div className='col-3' key={index}>
-    <img src={img} className="more-img"/>
+    <div className='col-12 col-md-4 col-lg-3' key={index}>
+    <img src={img} className="more-img" alt="short-imgs"/>
     </div>
   ));
 
@@ -37,11 +37,11 @@ function Project() {
   return (
   <div className='container-xl w-100 d-flex flex-column align-items-center'>
   <Header />
-  <main className='col-10 my-5 d-flex flex-column'>  
+  <main className='col-12 col-md-10 col-lg-10 my-5 d-flex flex-column'>  
   <h1 className='title align-self-start'>{project.title}</h1>
 
-  <div className='w-100 d-flex my-5'>
-  <div className='col-4 d-flex flex-column'>
+  <div className='w-100 d-flex flex-column flex-sm-column flex-md-column flex-lg-row my-5'>
+    <div className='col-12 col-md-12 col-lg-4 d-flex flex-column'>
       <div className='w-100' id="test">{tags}</div>
       <div className='w-100 mt-3 desc'>{project.desc}</div>
       <div className='w-100 mt-3 desc'>{project.more}</div>
@@ -62,8 +62,8 @@ function Project() {
       </div>
     </div>
     
-    <div className='col-8 d-flex flex-row align-items-end justify-content-end'>
-    <img src={project.img} id="proj-img" className='rounded-3'/>
+    <div className='col-12 col-md-12 col-lg-8 d-flex flex-row justify-content-center justify-content-end-lg'>
+    <img src={project.img} id="proj-img" className='rounded-3' alt="project-img"/>
     </div>
   </div>
 
