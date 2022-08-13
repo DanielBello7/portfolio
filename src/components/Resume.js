@@ -42,7 +42,7 @@ function Resume() {
   return (
   <div className='my-5 d-flex flex-column align-items-center'>
     <div className='col-7 text-center mb-5'>
-    <h3 className='h1 txt fw-bold resume'>Resume</h3>
+    <h3 className='h1 txt fw-bold resume'><a id="resume">Resume</a></h3>
     <p className='text-center text-muted' id="resume-text">
     My journey so far as a software engineer, 
     specializing in full-stack software development 
@@ -83,11 +83,15 @@ function Resume() {
     </div>
 
     <div className='col-9 my-5 text-center'>
+
     <p>Download my resume as a PDF file</p>
-    <button className='btn btn-dark px-4'>
+    <a href="/assets/Daniel-Bello-Resume.pdf" 
+       download="Daniel Bello Resume.pdf" 
+       className='btn btn-dark px-4'>
     <FaDownload className='me-2'/>
-    <span>Download (3MB)</span>
-    </button>
+    <span>Download (1.3MB)</span>
+    </a>
+
     </div>
   </div>
   )

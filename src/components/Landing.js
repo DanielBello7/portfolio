@@ -28,8 +28,8 @@ export function LandingText() {
   </p>
 
   <div>
-  <button className='btn btn1'>Contact me</button>
-  <button className='btn ms-2 btn2'>Check my work</button>
+  <a href="#contact" className='btn btn1'>Contact me</a>
+  <a href="#work" className='btn ms-2 btn2'>Check my work</a>
   </div>
   </div>
   )

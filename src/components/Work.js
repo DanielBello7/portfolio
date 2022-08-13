@@ -48,7 +48,7 @@ export function WorkExample({ id, title, tags, desc, img, repo, link }) {
 export function WorkIntro() {
   return (
   <div className='d-flex flex-column justify-content-center align-items-center'>
-  <h3 className='h1 fw-bold txt resume'>Work</h3>
+  <h3 className='h1 fw-bold txt resume'><a id="work">Work</a></h3>
   <p className='text-muted col-7 text-center' id="work-text">
   Check my commercial and non commercial projects. 
   If you have any questions feel free to ask me for more information.
