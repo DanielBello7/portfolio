@@ -23,14 +23,19 @@ body {
   border: 2px solid lightgray;
   font-size: 0.9rem;
 }
-#text1 {
+.txts {
   letter-spacing: -2px;
-  font-size: 3rem;
+  font-weight: bold;
+}
+#text1 {
+  letter-spacing: -6px;
+  font-size: 4rem;
   z-index: 2;
 }
 #text2 {
-  font-size: 0.9rem;
-  line-height: 18px;
+  font-size: 1rem;
+  line-height: 22px;
+  letter-spacing: -0.3px;
 }
 #logo {
   letter-spacing: -3px;
@@ -39,9 +44,9 @@ body {
   letter-spacing: -2px;
 }
 #work-text {
-  font-size: 0.9rem;
+  font-size: 1rem;
   letter-spacing: -0.5px;
-  line-height: 15px;
+  line-height: 20px;
 }
 .tag, .tags {
   font-size: 0.7rem;
@@ -93,8 +98,8 @@ body {
   transform: scale(1.05);
 }
 #resume-text {
-  font-size: 0.9rem;
-  line-height: 18px;
+  font-size: 1rem;
+  line-height: 20px;
 }
 .resume {
   font-size: 4rem;
@@ -187,24 +192,24 @@ body {
   position: absolute;
 }
 #skewed2 {
-  width: 180px;
-  height: 100px;
-  border-radius: 20px;
-  background-color: rgb(0, 0, 0, 0.5);
-  transform: skewX(-20deg);
-  position: absolute;
-  left: -90px;
-  top: -50px;
-}
-#skewed3 {
-  width: 150px;
+  width: 120px;
   height: 80px;
   border-radius: 20px;
-  background-color: rgb(0, 0, 0, 0.5);
+  background-color: rgb(0, 0, 0, 0.1);
   transform: skewX(-20deg);
   position: absolute;
-  bottom: -30px;
-  right: -60px;
+  left: -50px;
+  top: -30px;
+}
+#skewed3 {
+  width: 100px;
+  height: 60px;
+  border-radius: 20px;
+  background-color: rgb(0, 0, 0, 0.1);
+  transform: skewX(-20deg);
+  position: absolute;
+  bottom: -25px;
+  right: -55px;
 }
 #dot-box {
   display: flex;
@@ -230,11 +235,11 @@ body {
 }
 #handle2 {
   position: absolute;
-  left: -80px;
-  top: -30px;
+  left: -35px;
+  top: -10px;
 }
 #handle3 {
   position: absolute;
-  right: -80px;
-  bottom: -20px;
+  right: -70px;
+  bottom: -40px;
 }

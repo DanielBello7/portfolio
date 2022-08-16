@@ -5,6 +5,7 @@ import React, { useState, useRef } from 'react';
 import { FaPaperPlane, FaArrowRight } from 'react-icons/fa';
 import { Toast } from 'bootstrap';
 import ToastComponent from './ToastComponent';
+import { Fade } from 'react-awesome-reveal';
 
 function Contact() {
   const emailRef = useRef();
@@ -32,6 +33,10 @@ function Contact() {
 
     setLoading(true);
 
+    const controller = new AbortController();
+
+    const timeoutId = setTimeout(() => controller.abort(), 10000);
+
     try {
       const data = {
         email: emailRef.current.value,
@@ -52,7 +57,9 @@ function Contact() {
   }
 
   return (
+  <Fade triggerOnce delay={500}>
   <div className='text-center mb-5 d-flex flex-column align-items-center'>
+    
     <div className='col-12 col-md-8 col-lg-8'>
     <h1 className='fw-bold resume txt'>
     <a id="contact" href='#!' className='text-decoration-none text-dark'>Contact</a>
@@ -127,8 +134,10 @@ function Contact() {
     </div>
 
     </div>
+    
     <ToastComponent response={response} type={type} />
   </div>
+  </Fade>
   );
 }
 
