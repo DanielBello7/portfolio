@@ -109,7 +109,7 @@ function Resume() {
        download="Daniel Bello Resume.pdf" 
        className='btn btn-dark px-4'>
     <FaDownload className='me-2'/>
-    <span>Download (1.3MB)</span>
+    <span>Download (1.9MB)</span>
     </a>
     </Fade>
     </div>

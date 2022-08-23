@@ -45,7 +45,7 @@ function Contact() {
         message: messageRef.current.value
       }
 
-      const res = await SendMail(data.fullname, data.message, data.email, timeoutId);
+      const res = await SendMail(data.fullname, data.message, data.email);
 
       setLoading(false);
       HandleShow("Message sent successfully", true);

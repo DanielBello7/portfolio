@@ -1,7 +1,7 @@
 
 
 
-async function SendMail(name, body, email, timeout) {
+async function SendMail(name, body, email) {
   const myHeaders = new Headers();
   myHeaders.append("x-trustifi-key", process.env.REACT_APP_TRUSTIFI_KEY);
   myHeaders.append("x-trustifi-secret", process.env.REACT_APP_TRUSTIFI_SECRET);
@@ -20,7 +20,7 @@ async function SendMail(name, body, email, timeout) {
     ],
     lists: [],
     attachments: [],
-    title: "Test Mail from Trustify",
+    title: `Website Email from ${name}`,
     html: `${body}. From: ${name} - ${email}`,
     methods: {
       postmark: false,
@@ -36,7 +36,7 @@ async function SendMail(name, body, email, timeout) {
     body: jsonOptions,
     redirect: 'follow'
   }
-  const sendMail = await fetch("https://be.trustifi.com/api/i/v1/email", {...requestOptions, signal: timeout});
+  const sendMail = await fetch("https://be.trustifi.com/api/i/v1/email", requestOptions);
   const response = await sendMail.json();
   
   return response;
