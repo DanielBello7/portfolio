@@ -2,8 +2,8 @@
 
 
 // user images
-import img1 from '../assets/img-01.jpg';
-import img2 from '../assets/img-02.jpg';
+import user_img1 from '../assets/user/img1.jpg';
+import user_img2 from '../assets/user/img2.jpg';
 
 
 // 1-insc-web-app
@@ -23,11 +23,6 @@ import insc_web_5 from '../assets/2-insc-web/img5.jpg';
 
 
 // 3-iml-web
-import iml_web_1 from '../assets/3-iml-web/img1.jpg';
-import iml_web_2 from '../assets/3-iml-web/img2.jpg';
-import iml_web_3 from '../assets/3-iml-web/img3.jpg';
-import iml_web_4 from '../assets/3-iml-web/img4.jpg';
-import iml_web_5 from '../assets/3-iml-web/img5.jpg';
 
 
 // 4-ejs-auth
@@ -37,10 +32,11 @@ import ejs_auth_3 from '../assets/4-ejs-auth/img3.jpg';
 
 
 // 5-react-auth
-import react_auth_1 from '../assets/5-react-auth/img1.jpg';
-import react_auth_2 from '../assets/5-react-auth/img2.jpg';
-import react_auth_3 from '../assets/5-react-auth/img3.jpg';
-
+import social_app_1 from '../assets/5-social-app/img1.png';
+import social_app_2 from '../assets/5-social-app/img2.png';
+import social_app_3 from '../assets/5-social-app/img3.png';
+import social_app_4 from '../assets/5-social-app/img4.png';
+import social_app_5 from '../assets/5-social-app/img5.png';
 
 // 6-nft-market
 import nft_1 from '../assets/6-nft-market/001.png';
@@ -75,8 +71,8 @@ import finder_3 from '../assets/9-finder/img3.png';
 
 
 const imgs = { 
-  img1, 
-  img2,
+  user_img1, 
+  user_img2,
   
   insc_web_app_1,
   insc_web_app_2,
@@ -90,19 +86,16 @@ const imgs = {
   insc_web_4,
   insc_web_5,
 
-  iml_web_1,
-  iml_web_2,
-  iml_web_3,
-  iml_web_4,
-  iml_web_5,
 
   ejs_auth_1,
   ejs_auth_2,
   ejs_auth_3,
 
-  react_auth_1,
-  react_auth_2,
-  react_auth_3,
+  social_app_1,
+  social_app_2,
+  social_app_3,
+  social_app_4,
+  social_app_5,
 
   nft_1,
   nft_2,

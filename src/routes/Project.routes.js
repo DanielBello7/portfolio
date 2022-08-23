@@ -44,7 +44,7 @@ function Project() {
   <h1 className='title align-self-start'>{project.title}</h1>
   </Fade>
 
-  <div className='w-100 d-flex flex-column flex-sm-column flex-md-column flex-lg-row my-5'>
+  <div className='w-100 d-flex flex-column flex-sm-column flex-md-column align-items-center flex-lg-row my-5'>
     <div className='col-12 col-md-12 col-lg-4 d-flex flex-column'>
       <div className='w-100' id="test">
       <Fade className='d-inline bg-light px-3 py-1 rounded-5 me-2 mb-2' cascade triggerOnce>
@@ -78,8 +78,8 @@ function Project() {
     </div>
     
     <div className='col-12 col-md-12 col-lg-8 d-flex flex-row justify-content-center justify-content-end-lg'>
-    <Fade className='col-12 col-md-12 col-lg-12 d-flex flex-row justify-content-center justify-content-end-lg' triggerOnce>
-    <img src={project.img} id="proj-img" className='rounded-3 border shadow' alt="project-img"/>
+    <Fade className='col-12 col-md-12 col-lg-12 d-flex flex-row ms-5' triggerOnce>
+    <img src={project.img} id="proj-img" className='w-100 h-auto rounded-3 border shadow' alt="project-img"/>
     </Fade>
     </div>
   </div>
@@ -96,7 +96,7 @@ function Project() {
 
   <div className='w-100' id="bottom-footer"><Footer /></div>
   </div>
-  )
+  );
 }
 
 export default Project;

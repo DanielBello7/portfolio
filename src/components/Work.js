@@ -1,7 +1,7 @@
 
 
 
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FaEye, FaGithub } from 'react-icons/fa';
 import { projects } from '../constants';
@@ -18,8 +18,8 @@ export function WorkExample({ id, title, tags, desc, img, repo, link }) {
   }
   
   return (
-  <div className='col-12 col-md-12 col-lg-12' id="project" onClick={HandleNavigation}>
-    <div className='w-100' id="asset-img">
+  <div className='col-12 col-md-12 col-lg-12' id="project">
+    <div className='w-100' id="asset-img" onClick={HandleNavigation}>
     <img src={img} 
          className="w-100 border border-2 rounded-4 mb-2 h-100 asst-img" 
          alt="asset-img" 
@@ -36,12 +36,12 @@ export function WorkExample({ id, title, tags, desc, img, repo, link }) {
     <p className='text-muted example-text mb-3'>{desc}</p>
 
     <div className='mt-3 d-flex flex-row'>
-    <button className='btn btn3'>
+    <a className='btn btn3' href={link} target="_blank">
     <FaEye className='me-2'/>Preview
-    </button>
-    <button className='btn btn4 ms-2'>
+    </a>
+    <a className='btn btn4 ms-2' href={repo} target="_blank">
     <FaGithub className='me-2'/>GitHub Repo
-    </button>
+    </a>
     </div>
   </div>
   );

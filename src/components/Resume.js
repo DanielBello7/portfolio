@@ -74,7 +74,7 @@ function Resume() {
 
     <div className='col-12 col-md-4 col-lg-4 d-flex justify-content-center align-items-center'>
     <Fade delay={500} triggerOnce>
-    <div id="center-img"><img src={assets.img1} id="user-img" alt="user-img"/></div>
+    <div id="center-img"><img src={assets.user_img2} id="user-img" alt="user-img"/></div>
     </Fade>
     </div>
     </div>

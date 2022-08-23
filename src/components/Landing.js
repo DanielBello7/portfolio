@@ -4,6 +4,7 @@
 import DotsBox from './DotsBox';
 import { assets } from '../constants';
 import { Fade } from 'react-awesome-reveal';
+import React from 'react';
 
 
 export function LandingImage() {
@@ -16,7 +17,7 @@ export function LandingImage() {
     </div>
     </div> */}
     <Fade triggerOnce duration={1000} delay={2000}>
-    <img src={assets.img1} id="img" className='w-100' alt='user-img' />
+    <img src={assets.user_img1} id="img" className='w-100' alt='user-img' />
     </Fade>
 
     {/* <div>
@@ -67,10 +68,14 @@ export function LandingText() {
 
 function Landing() {
   return (
-  <div className='col-12 col-md-12 col-lg-9 d-flex flex-column-reverse flex-md-row flex-lg-row align-self-center align-items-center my-4' id="landing">
+  <React.Fragment>
+  <div className='my-5'></div>
+  <div className='col-12 col-md-12 col-lg-9 d-flex flex-column-reverse flex-md-row flex-lg-row align-self-center align-items-center my-4 mt-5' id="landing">
   <div className='col-12 col-md-4 col-lg-4'><LandingImage /></div>
   <div className='col-12 col-md-8 col-lg-8 mb-5'><LandingText /></div>
   </div>
+  <div className='my-4'></div>
+  </React.Fragment>
   );
 }
 
