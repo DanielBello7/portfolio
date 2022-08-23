@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router-dom';
 import { FaEye, FaGithub } from 'react-icons/fa';
 import { projects } from '../constants';
 import { Fade } from 'react-awesome-reveal';
+import { tabs } from '../constants';
 
 export function WorkExample({ id, title, tags, desc, img, repo, link }) {
   const navigate = useNavigate();
@@ -20,7 +21,7 @@ export function WorkExample({ id, title, tags, desc, img, repo, link }) {
   <div className='col-12 col-md-12 col-lg-12' id="project" onClick={HandleNavigation}>
     <div className='w-100' id="asset-img">
     <img src={img} 
-         className="w-100 rounded-2 mb-2 h-100 asst-img" 
+         className="w-100 border border-2 rounded-4 mb-2 h-100 asst-img" 
          alt="asset-img" 
          />
     </div>
@@ -28,8 +29,8 @@ export function WorkExample({ id, title, tags, desc, img, repo, link }) {
     <h5 className='fw-bold txt my-2 w-100'>{title}</h5>
     
     <div className='d-flex flex-row flex-warp overflow-hidden'>
-    {output.slice(0, 4)} 
-    {output.length > 4 && <p className='tag'>+{output.length - 4}</p>}
+    {output.slice(0, 3)} 
+    {output.length > 3 && <p className='tag'>+{output.length - 3}</p>}
     </div>
     
     <p className='text-muted example-text mb-3'>{desc}</p>
@@ -56,7 +57,7 @@ export function WorkIntro() {
   </Fade>
   <Fade triggerOnce duration={1000} className="d-flex justify-content-center">
   <p className='text-muted col-12 col-md-7 col-lg-7 text-center' id="work-text">
-  Check my commercial and non commercial projects. 
+  Check some of my commercial and non commercial projects. 
   If you have any questions feel free to ask me for more information.
   </p>
   </Fade>
@@ -68,7 +69,7 @@ function Work() {
   
   const [selected, setSelected] = useState(projects);
 
-  const tabs = ['All', 'React', 'Vue', 'Java', 'NodeJS', 'Express', 'React-Native'];
+  const [active, setActive] = useState('All');
 
   const output = selected.map(project => (
     <WorkExample key={project.id} 
@@ -86,12 +87,14 @@ function Work() {
     const amount = projects.filter(project => project.tags.includes(tab));
     
     const HandleSelection = () => {
+      setActive(tab);
       if (tab === 'All') return setSelected(projects);
       const all = projects.filter(project => project.tags.includes(tab));
       return setSelected(all);
     }
 
-    return <p className='tags mb-2 mb-md-0 mb-lg-0' key={index} onClick={HandleSelection}>
+    return <p className={`${active === tab && 'bg-dark bg-opacity-75 text-white'} tags mb-2 mb-md-0 mb-lg-0 `} 
+              key={index} onClick={HandleSelection}>
            {tab} ({tab === 'All' ? projects.length : amount.length})
            </p>
   });

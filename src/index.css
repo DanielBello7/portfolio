@@ -58,7 +58,7 @@ body {
   background-color: rgb(238, 238, 238);
 }
 .tags {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   margin: 0px;
   padding: 10px 15px;
   display: flex;
@@ -147,12 +147,13 @@ body {
   font-weight: bold;
 }
 .title {
-  font-size: 7rem;
+  font-size: 8rem;
   font-weight: bold;
   letter-spacing: -10px;
 }
 #proj-img {
   width: 95%;
+  object-fit: contain;
 }
 .desc {
   font-size: 1.2rem;

@@ -22,7 +22,7 @@ function Project() {
 
   const imgs = project?.imgs?.map((img, index) => (
     <div className='col-12 col-md-12 col-lg-12' key={index}>
-    <img src={img} className="more-img" alt="short-imgs"/>
+    <img src={img} className="more-img shadow rounded-3 border" alt="short-imgs"/>
     </div>
   ));
 
@@ -65,21 +65,21 @@ function Project() {
 
       <Fade triggerOnce delay={600}>
       <div className='d-flex flex-row my-5'>
-      <button className='btn btn-dark px-4 d-flex flex-row align-items-center'>
+      <a className='btn btn-dark px-4 d-flex flex-row align-items-center' href={project.link} target="_blank">
       <FaEye size={15} className="me-2"/>
       <span>Preview</span>
-      </button>
-      <button className='btn btn-outline-dark px-4 d-flex flex-row align-items-center ms-2'>
+      </a>
+      <a className='btn btn-outline-dark px-4 d-flex flex-row align-items-center ms-2' href={project.repo} target="_blank">
       <FaGithub size={15} className="me-2"/>
       <span>Github Repo</span>
-      </button>
+      </a>
       </div>
       </Fade>
     </div>
     
     <div className='col-12 col-md-12 col-lg-8 d-flex flex-row justify-content-center justify-content-end-lg'>
     <Fade className='col-12 col-md-12 col-lg-12 d-flex flex-row justify-content-center justify-content-end-lg' triggerOnce>
-    <img src={project.img} id="proj-img" className='rounded-3' alt="project-img"/>
+    <img src={project.img} id="proj-img" className='rounded-3 border shadow' alt="project-img"/>
     </Fade>
     </div>
   </div>
@@ -89,7 +89,7 @@ function Project() {
   <div><h2 className='d-inline bg-dark text-white txt'>More Shots</h2></div>
   </Fade>
   <div className='w-100 my-5 row m-0 p-0 g-4 d-flex flex-row align-items-center justify-content-between'>
-  <Fade className='col-12 col-md-4 col-lg-3' cascade triggerOnce>{imgs}</Fade>
+  <Fade className='col-12 col-md-6 col-lg-6' cascade triggerOnce>{imgs}</Fade>
   </div>
   </div>
   </main>

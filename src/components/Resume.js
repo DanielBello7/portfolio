@@ -1,7 +1,7 @@
 
 
 
-import { experience } from '../constants';
+import { experience, skills } from '../constants';
 import { FaDownload } from 'react-icons/fa';
 import { assets } from '../constants';
 import { Fade } from 'react-awesome-reveal';
@@ -19,17 +19,7 @@ function WorkExperience({ title, location, period }) {
 }
 
 function Resume() {
-  const skills = [
-    'HTML & CSS',
-    'Javascript',
-    'Typescript',
-    'C#',
-    'NodeJS',
-    'Express',
-    'React',
-    'React Native',
-  ];
-  
+
   const output = experience.map((item, index) => {
     return <WorkExperience key={index} 
                            title={item.title} 
@@ -106,7 +96,7 @@ function Resume() {
     <h3 className='h1 txt fw-bold bg-dark text-white d-inline'>Skills and Tools</h3>
     </Fade>
     <div className='mt-5 w-100 row gx-4 m-0 text-center'>
-    <Fade triggerOnce className='col-4' cascade>
+    <Fade triggerOnce className='col-4' cascade duration={200}>
     {skillsOutput}
     </Fade>
     </div>
