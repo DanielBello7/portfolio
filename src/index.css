@@ -53,6 +53,7 @@ body {
   border: 0px solid black;
   display: inline;
   padding: 5px 10px;
+  margin-bottom: 0px;
   margin-right: 2px;
   border-radius: 30px;
   background-color: rgb(238, 238, 238);
@@ -248,4 +249,7 @@ body {
   position: absolute;
   right: -70px;
   bottom: -40px;
+}
+.f {
+  flex-wrap: wrap;
 }

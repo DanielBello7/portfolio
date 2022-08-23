@@ -84,7 +84,7 @@ function Resume() {
     <Fade triggerOnce>
     <h3 className='h1 txt fw-bold bg-dark text-white d-inline'>Work Experience</h3>
     </Fade>
-    <div className='mt-3 w-100 row gx-4 m-0 justify-content-between'>
+    <div className='mt-3 w-100 row gx-2 m-0 justify-content-between'>
     <Fade triggerOnce className='col-12 col-md-4 col-lg-4' cascade direction='up'>
       {output}
     </Fade>
@@ -95,7 +95,7 @@ function Resume() {
     <Fade triggerOnce>
     <h3 className='h1 txt fw-bold bg-dark text-white d-inline'>Skills and Tools</h3>
     </Fade>
-    <div className='mt-5 w-100 row gx-4 m-0 text-center'>
+    <div className='mt-5 w-100 row gx-1 m-0 text-center'>
     <Fade triggerOnce className='col-4' cascade duration={200}>
     {skillsOutput}
     </Fade>

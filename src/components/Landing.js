@@ -32,7 +32,7 @@ export function LandingImage() {
 
 export function LandingText() {
   return (
-  <div className='ms-0 ms-md-4 ms-lg-4 text-center text-md-start text-lg-start'>
+  <div className='ms-0 ms-md-4 ms-lg-4 mb-5 mb-md-0 mb-lg-0 text-center text-md-start text-lg-start'>
   
   <div className='w-100 position-relative'>
   <Fade delay={2000} duration={2000}>
@@ -69,12 +69,10 @@ export function LandingText() {
 function Landing() {
   return (
   <React.Fragment>
-  <div className='d-none d-md-block d-lg-block my-4'></div>
-  <div className='col-12 col-md-12 col-lg-9 d-flex flex-column-reverse flex-md-row flex-lg-row align-self-center align-items-center my-4 mt-5' id="landing">
+  <div className='col-12 col-md-12 col-lg-9 d-flex flex-column-reverse flex-md-row flex-lg-row align-self-center align-items-center my-5' id="landing">
   <div className='col-12 col-md-4 col-lg-4'><LandingImage /></div>
-  <div className='col-12 col-md-8 col-lg-8 mb-5'><LandingText /></div>
+  <div className='col-12 col-md-8 col-lg-8'><LandingText /></div>
   </div>
-  <div className='d-none d-md-block d-lg-block my-4 pb-5'></div>
   </React.Fragment>
   );
 }

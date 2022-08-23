@@ -14,7 +14,7 @@ export function WorkExample({ id, title, tags, desc, img, repo, link, handleClic
 
   const navigate = useNavigate();
   
-  const output = tags.map((tag, index) => <p className='tag' key={index}>{tag}</p>);
+  const output = tags.map((tag, index) => <p className='tag mb-2' key={index}>{tag}</p>);
 
   const HandleNavigation = () => {
     return navigate(`/project/${id}`);
@@ -31,9 +31,9 @@ export function WorkExample({ id, title, tags, desc, img, repo, link, handleClic
     
     <h5 className='fw-bold txt my-2 w-100'>{title}</h5>
     
-    <div className='d-flex flex-row flex-warp overflow-hidden'>
-    {output.slice(0, 3)} 
-    {output.length > 3 && <p className='tag'>+{output.length - 3}</p>}
+    <div className='d-flex w-100 flex-row overflow-hidden mb-2 f'>
+    {output.slice(0, 2)} 
+    {output.length > 2 && <p className='tag mb-2'>+{output.length - 2}</p>}
     </div>
     
     <p className='text-muted example-text mb-3'>{desc}</p>
@@ -106,7 +106,7 @@ function Work() {
       return setSelected(all);
     }
 
-    return <p className={`${active === tab && 'bg-dark bg-opacity-75 text-white'} tags mb-2 mb-md-0 mb-lg-0 `} 
+    return <p className={`${active === tab && 'bg-dark bg-opacity-75 text-white'} tags my-2 mb-md-0 mb-lg-0 `} 
               key={index} onClick={HandleSelection}>
            {tab} ({tab === 'All' ? projects.length : amount.length})
            </p>
@@ -119,7 +119,7 @@ function Work() {
   <div className='mt-5 mb-3 d-flex flex-row overflow-hidden flex-warp align-items-center justify-content-center' id="tabsLine">
   <Fade triggerOnce cascade duration={500}>{tabOutput}</Fade>
   </div>
-  <div className='col-12 col-md-12 col-lg-9 my-4 d-flex flex-row flex-warp'>
+  <div className='col-12 col-md-12 col-lg-10 my-4 d-flex flex-row flex-warp'>
   <div className='w-100 m-0 p-0 row g-5'>
   <Fade direction='up' cascade triggerOnce duration={1000} className="col-12 col-md-4 col-lg-4">
   {output}

@@ -21,12 +21,12 @@ export function Socials({ reverse }) {
   return (
   <div className="d-flex flex-row">
   <Fade delay={900} triggerOnce duration={500} reverse={reverse} cascade direction={!reverse ? "down" : "up"}>
-  <a href="https://github.com/DanielBello7" className='text-dark'><FaGithub size={24}/></a>
+  <a href="https://github.com/DanielBello7" target="_blank" className='text-dark'><FaGithub size={24}/></a>
 
-  <a href="https://www.linkedin.com/in/adegoke-bello-3397a3a6" 
+  <a href="https://www.linkedin.com/in/adegoke-bello-3397a3a6" target="_blank"
      className='text-dark'><FaLinkedin className='ms-3' size={24}/></a>
 
-  <a href="https://twitter.com/OnlyBello_" className='text-dark'><FaTwitter className='ms-3' size={24}/></a>
+  <a href="https://twitter.com/OnlyBello_" target="_blank" className='text-dark'><FaTwitter className='ms-3' size={24}/></a>
   </Fade>
   </div>
   )
