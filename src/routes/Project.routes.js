@@ -1,19 +1,30 @@
 
 
 
-import { useState, useLayoutEffect } from 'react';
+import React, { useState, useLayoutEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { projects } from '../constants';
 import { FaEye, FaGithub } from 'react-icons/fa';
 import { Fade } from 'react-awesome-reveal';
+import { Toast } from 'bootstrap';
 import EmptyProject from '../components/EmptyProject';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import ToastComponent2 from '../components/ToastComponent2';
 
 function Project() {
   const params = useParams();
+
+  const [toast, setToast] = useState({type: false, msg: ""});
   
   const [project, setProject] = useState(null);
+
+  const HandleShow = (text, type) => {
+    const element = document.getElementById("liveToast2");
+    const myToast = Toast.getOrCreateInstance(element, {animation: true});
+    setToast({msg: text, type: type});
+    return myToast.show();
+  }
 
   const tags = project?.tags.map((tag, index) => {
     return <span className='d-inline bg-light rounded-5' 
@@ -37,6 +48,7 @@ function Project() {
   if (!project) return <EmptyProject />
 
   return (
+  <React.Fragment>
   <div className='container-xl w-100 d-flex flex-column align-items-center'>
   <Header />
   <main className='col-12 col-md-10 col-lg-10 my-5 d-flex flex-column'>  
@@ -69,7 +81,7 @@ function Project() {
       <FaEye size={15} className="me-2"/>
       <span>Preview</span>
       </a>
-      <a className='btn btn-outline-dark px-4 d-flex flex-row align-items-center ms-2' href={project.repo} target="_blank">
+      <a className='btn btn-outline-dark px-4 d-flex flex-row align-items-center ms-2' href={project.repo} target="_blank" onClick={() => !project.repo && HandleShow('Currently unavailable', false)}>
       <FaGithub size={15} className="me-2"/>
       <span>Github Repo</span>
       </a>
@@ -96,6 +108,8 @@ function Project() {
 
   <div className='w-100' id="bottom-footer"><Footer /></div>
   </div>
+  <ToastComponent2 response={toast.msg} type={toast.type} />
+  </React.Fragment>
   );
 }
 

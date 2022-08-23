@@ -5,10 +5,13 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FaEye, FaGithub } from 'react-icons/fa';
 import { projects } from '../constants';
+import { Toast } from 'bootstrap';
 import { Fade } from 'react-awesome-reveal';
 import { tabs } from '../constants';
+import ToastComponent2 from './ToastComponent2';
 
-export function WorkExample({ id, title, tags, desc, img, repo, link }) {
+export function WorkExample({ id, title, tags, desc, img, repo, link, handleClick }) {
+
   const navigate = useNavigate();
   
   const output = tags.map((tag, index) => <p className='tag' key={index}>{tag}</p>);
@@ -39,7 +42,7 @@ export function WorkExample({ id, title, tags, desc, img, repo, link }) {
     <a className='btn btn3' href={link} target="_blank">
     <FaEye className='me-2'/>Preview
     </a>
-    <a className='btn btn4 ms-2' href={repo} target="_blank">
+    <a className='btn btn4 ms-2' href={repo} target="_blank" onClick={() => !repo && handleClick()}>
     <FaGithub className='me-2'/>GitHub Repo
     </a>
     </div>
@@ -67,9 +70,18 @@ export function WorkIntro() {
 
 function Work() {
   
+  const [toast, setToast] = useState({msg: "", type: false});
+
   const [selected, setSelected] = useState(projects);
 
   const [active, setActive] = useState('All');
+
+  const HandleShow = (text, type) => {
+    const element = document.getElementById("liveToast2");
+    const myToast = Toast.getOrCreateInstance(element, {animation: true});
+    setToast({msg: text, type: type});
+    return myToast.show();
+  }
 
   const output = selected.map(project => (
     <WorkExample key={project.id} 
@@ -80,6 +92,7 @@ function Work() {
                  repo={project.repo} 
                  link={project.link}
                  id={project.id}
+                 handleClick={() => HandleShow('Currently unavailable', false)}
                  />
   ));
 
@@ -100,6 +113,7 @@ function Work() {
   });
 
   return (
+  <React.Fragment>
   <div className='d-flex flex-column my-5 align-items-center'>
   <WorkIntro />
   <div className='mt-5 mb-3 d-flex flex-row overflow-hidden flex-warp align-items-center justify-content-center' id="tabsLine">
@@ -113,6 +127,8 @@ function Work() {
   </div>
   </div>
   </div>
+  <ToastComponent2 response={toast.msg} type={toast.type}/>
+  </React.Fragment>
   );
 }
 
