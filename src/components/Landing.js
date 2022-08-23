@@ -69,12 +69,12 @@ export function LandingText() {
 function Landing() {
   return (
   <React.Fragment>
-  <div className='my-5'></div>
+  <div className='d-none d-md-block d-lg-block my-4'></div>
   <div className='col-12 col-md-12 col-lg-9 d-flex flex-column-reverse flex-md-row flex-lg-row align-self-center align-items-center my-4 mt-5' id="landing">
   <div className='col-12 col-md-4 col-lg-4'><LandingImage /></div>
   <div className='col-12 col-md-8 col-lg-8 mb-5'><LandingText /></div>
   </div>
-  <div className='my-4'></div>
+  <div className='d-none d-md-block d-lg-block my-4 pb-5'></div>
   </React.Fragment>
   );
 }
