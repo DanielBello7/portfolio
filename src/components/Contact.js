@@ -4,8 +4,9 @@
 import React, { useState, useRef } from 'react';
 import { FaPaperPlane, FaArrowRight } from 'react-icons/fa';
 import { Toast } from 'bootstrap';
-import ToastComponent from './ToastComponent';
 import { Fade } from 'react-awesome-reveal';
+import SendMail from '../modules/SendMail';
+import ToastComponent from './ToastComponent';
 
 function Contact() {
   const emailRef = useRef();
@@ -28,7 +29,7 @@ function Contact() {
     return myToast.show();
   }
 
-  const HandleSubmit = (event) => {
+  const HandleSubmit = async (event) => {
     event.preventDefault();
 
     setLoading(true);
@@ -44,7 +45,7 @@ function Contact() {
         message: messageRef.current.value
       }
 
-      console.log(data);
+      const res = await SendMail(data.fullname, data.message, data.email, timeoutId);
 
       setLoading(false);
       HandleShow("Message sent successfully", true);
@@ -65,7 +66,7 @@ function Contact() {
     <a id="contact" href='#!' className='text-decoration-none text-dark'>Contact</a>
     </h1>
 
-    <p className='m-0 p-0 text-muted bt-txt'>React out to me.</p>
+    <p className='m-0 p-0 text-muted bt-txt'>Reach out to me.</p>
     <p className='m-0 p-0 text-muted bt-txt'>
     Let me know if 
     you are interested in my services 
