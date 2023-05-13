@@ -1,6 +1,3 @@
-
-
-
 async function SendMail(name, body, email) {
   const myHeaders = new Headers();
   myHeaders.append("x-trustifi-key", process.env.REACT_APP_TRUSTIFI_KEY);
@@ -10,8 +7,8 @@ async function SendMail(name, body, email) {
   const jsonOptions = JSON.stringify({
     recipients: [
       {
-        email: "gokebello@gmail.com", 
-        name: 'Goke Bello', 
+        email: "gokebello@gmail.com",
+        name: 'Goke Bello',
         phone: {
           country_code: "+234",
           phone_number: "8071749618"
@@ -38,7 +35,7 @@ async function SendMail(name, body, email) {
   }
   const sendMail = await fetch("https://be.trustifi.com/api/i/v1/email", requestOptions);
   const response = await sendMail.json();
-  
+
   return response;
 }
 

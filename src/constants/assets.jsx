@@ -1,6 +1,3 @@
-
-
-
 // user images
 import user_img1 from '../assets/user/img01.jpg';
 import user_img2 from '../assets/user/img02.jpg';
@@ -70,10 +67,10 @@ import finder_3 from '../assets/9-finder/img37.png';
 
 
 
-const imgs = { 
-  user_img1, 
+const imgs = {
+  user_img1,
   user_img2,
-  
+
   insc_web_app_1,
   insc_web_app_2,
   insc_web_app_3,

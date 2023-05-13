@@ -1,6 +1,3 @@
-
-
-
 import assets from './assets';
 
 const projects = [
@@ -161,12 +158,12 @@ const skills = [
 ];
 
 const tabs = [
-  'All', 
-  'ReactJS', 
-  'React Native', 
-  'Javascript', 
-  'NodeJS', 
-  'Typescript', 
+  'All',
+  'ReactJS',
+  'React Native',
+  'Javascript',
+  'NodeJS',
+  'Typescript',
   'HTML & CSS',
   'Tailwind',
   'Bootstrap 5',

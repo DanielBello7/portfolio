@@ -3,10 +3,12 @@ body {
   margin: 0;
   padding: 0;
 }
+
 * {
   box-sizing: border-box;
   transition: 0.4s ease all;
 }
+
 .btn1 {
   border: 2px solid black;
   border-radius: 3px;
@@ -15,6 +17,7 @@ body {
   background-color: black;
   color: white;
 }
+
 .btn2 {
   border-radius: 3px;
   padding: 8px 30px;
@@ -23,32 +26,40 @@ body {
   border: 2px solid lightgray;
   font-size: 0.9rem;
 }
+
 .txts {
   letter-spacing: -2px;
   font-weight: bold;
 }
+
 #text1 {
   letter-spacing: -6px;
   font-size: 4rem;
   z-index: 2;
 }
+
 #text2 {
   font-size: 1rem;
   line-height: 22px;
   letter-spacing: -0.3px;
 }
+
 #logo {
   letter-spacing: -3px;
 }
+
 .txt {
   letter-spacing: -2px;
 }
+
 #work-text {
   font-size: 1rem;
   letter-spacing: -0.5px;
   line-height: 20px;
 }
-.tag, .tags {
+
+.tag,
+.tags {
   font-size: 0.7rem;
   border: 0px solid black;
   display: inline;
@@ -58,6 +69,7 @@ body {
   border-radius: 30px;
   background-color: rgb(238, 238, 238);
 }
+
 .tags {
   font-size: 0.8rem;
   margin: 0px;
@@ -68,119 +80,148 @@ body {
   margin-right: 5px;
   cursor: pointer;
 }
+
 .tags:hover {
   background-color: rgb(214, 214, 214);
 }
+
 .example-text {
   font-size: 0.8rem;
   line-height: 15px;
 }
+
 .btn3 {
   border: 2px solid black;
   font-size: 0.7rem;
   background-color: black;
   color: white;
 }
+
 .btn4 {
   border: 0px solid lightgrey;
   font-size: 0.7rem;
 }
+
 #asset-img {
   /* height: 160px; */
   height: auto;
 }
+
 .asst-img {
   object-fit: contain;
 }
+
 #project {
   cursor: pointer;
 }
+
 #project:hover {
   transform: scale(1.05);
 }
+
 #resume-text {
   font-size: 1rem;
   line-height: 20px;
 }
+
 .resume {
   font-size: 4rem;
 }
+
 .bt-txt {
   line-height: 19px;
 }
+
 #floatingTextarea2 {
   height: 300px;
   resize: none;
 }
+
 #my-email {
   letter-spacing: -1px;
   cursor: pointer;
 }
+
 #my-email:hover {
   background-color: black;
   color: white;
 }
+
 #center-img {
   width: 200px;
   height: 200px;
   border-radius: 300px;
   background-color: black;
 }
+
 #user-img {
   width: 100%;
   height: 100%;
   border-radius: 300px;
   object-fit: cover;
 }
+
 #error {
   font-size: 8rem;
   letter-spacing: -15px;
 }
+
 #sorry {
   letter-spacing: -4px;
 }
+
 .sorry-txt {
   letter-spacing: -1px;
 }
+
 #select-another {
   font-size: 4rem;
   letter-spacing: -7px;
   font-weight: bold;
 }
+
 .title {
   font-size: 8rem;
   font-weight: bold;
   letter-spacing: -10px;
 }
+
 .title2 {
   font-size: 6rem;
   font-weight: bold;
   letter-spacing: -10px;
 }
+
 #proj-img {
   width: 95%;
   object-fit: contain;
 }
+
 .desc {
   font-size: 1.2rem;
   line-height: 25px;
   letter-spacing: -1.5px;
 }
+
 #test {
   overflow: hidden;
   display: flex;
   flex-wrap: wrap;
 }
+
 .more-img {
   width: 100%;
 }
+
 #bottom-footer {
   margin-top: 300px;
 }
+
 #tabsLine {
   display: flex;
   flex-wrap: wrap;
 }
+
 #small-box {
   position: absolute;
   top: -30px;
@@ -189,6 +230,7 @@ body {
   height: 80px;
   background-color: rgb(0, 0, 0, 0.05);
 }
+
 #skewed {
   width: 250px;
   height: 150px;
@@ -198,6 +240,7 @@ body {
   left: 34%;
   position: absolute;
 }
+
 #skewed2 {
   width: 120px;
   height: 80px;
@@ -208,6 +251,7 @@ body {
   left: -50px;
   top: -30px;
 }
+
 #skewed3 {
   width: 100px;
   height: 60px;
@@ -218,6 +262,7 @@ body {
   bottom: -25px;
   right: -55px;
 }
+
 #dot-box {
   display: flex;
   flex-wrap: wrap;
@@ -226,6 +271,7 @@ body {
   transform: skewX(-20deg);
   border-radius: 30px;
 }
+
 .dot {
   height: 5px;
   width: 5px;
@@ -235,21 +281,25 @@ body {
   border-radius: 50%;
   margin: 0;
 }
+
 #handle {
   position: absolute;
   left: 36%;
   top: 25px;
 }
+
 #handle2 {
   position: absolute;
   left: -35px;
   top: -10px;
 }
+
 #handle3 {
   position: absolute;
   right: -70px;
   bottom: -40px;
 }
+
 .f {
   flex-wrap: wrap;
 }
