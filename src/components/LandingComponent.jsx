@@ -4,16 +4,17 @@ import React from 'react';
 
 function LandingImage() {
     return (
-        <div id="landing-image" className='w-100 position-relative'>
+        <div id="landing-image" className='w-100 position-relative' style={{ height: '350px' }}>
             <Fade triggerOnce duration={1000} delay={2000}>
                 <img
                     src={assets.user_img4}
                     id="img"
-                    className='w-100'
+                    className='w-100 h-100 rounded-3'
+                    style={{ objectFit: 'cover' }}
                     alt='user-img'
                 />
             </Fade>
-        </div>
+        </div >
     )
 }
 
@@ -62,7 +63,7 @@ function LandingText() {
 function Landing() {
     return (
         <React.Fragment>
-            <div className='col-12 col-md-12 col-lg-9 d-flex flex-column-reverse flex-md-row flex-lg-row align-self-center align-items-center my-5' id="landing">
+            <div className='col-12 col-md-12 col-lg-9 d-flex flex-column-reverse flex-md-row flex-lg-row align-self-center align-items-center my-5 pt-5' id="landing">
                 <div className='col-12 col-md-4 col-lg-4'>
                     <LandingImage />
                 </div>

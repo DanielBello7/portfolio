@@ -110,7 +110,7 @@ function Resume() {
                 <Fade>
                     <p>Download my resume as a PDF file</p>
                     <a
-                        href="/assets/Daniel-Bello-Resume.pdf"
+                        href="/Daniel-Bello-Resume.pdf"
                         download="Daniel Bello Resume.pdf"
                         className='btn btn-dark px-4'
                     >
