@@ -2,12 +2,12 @@ import { Fade } from 'react-awesome-reveal';
 import { assets } from '../constants';
 import React from 'react';
 
-export function LandingImage() {
+function LandingImage() {
     return (
         <div id="landing-image" className='w-100 position-relative'>
             <Fade triggerOnce duration={1000} delay={2000}>
                 <img
-                    src={assets.user_img3}
+                    src={assets.user_img4}
                     id="img"
                     className='w-100'
                     alt='user-img'
@@ -28,7 +28,7 @@ function LandingText() {
 
                 <Fade triggerOnce direction='up' delay={2000} duration={1000}>
                     <h1 className='fw-bold zindex-tooltip' id="text1">
-                        <span className='me-1'>Hi, I'm Daniel and I'm a</span>
+                        <span className=''>Hi, I'm Daniel and I'm a </span>
                         <span className='bg-dark text-white'>Full-Stack Developer</span>.
                     </h1>
                 </Fade>

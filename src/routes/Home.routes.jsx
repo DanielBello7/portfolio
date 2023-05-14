@@ -7,17 +7,17 @@ import React from 'react';
 function Home() {
     return (
         <main className={`container-xl w-100 d-flex flex-column`}>
-            {/* <Landing />
+            <Landing />
             <br />
-            <br /> */}
+            <br />
 
-            {/* <WorkComponent />
+            <WorkComponent />
             <br />
-            <br /> */}
+            <br />
 
-            {/* <Resume />
+            <Resume />
             <br />
-            <br /> */}
+            <br />
 
             <Contact />
         </main>

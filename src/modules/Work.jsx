@@ -14,7 +14,7 @@ function Work({ id, title, tags, desc, img, repo, link, handleClick }) {
     });
 
     return (
-        <div className='col-12 col-md-12 col-lg-12 d-flex flex-column' id="project" style={{ height: '350px' }}>
+        <div className='col-12 col-md-12 col-lg-12 d-flex flex-column' id="project" style={{ height: '380px' }}>
             <div className='w-100' id="asset-img" onClick={HandleNavigation} style={{ height: '55%' }}>
                 <img
                     className="w-100 border border-2 rounded-4 mb-2 h-100 asst-img"

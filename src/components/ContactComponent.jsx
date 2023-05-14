@@ -1,8 +1,9 @@
 import { FaPaperPlane, FaArrowRight } from 'react-icons/fa';
 import { Fade } from 'react-awesome-reveal';
+import { variables } from '../constants';
 import { useModalData } from '../ModalContext';
 import React from 'react';
-import SendMail from '../SendMail';
+import axios from 'axios';
 
 function ContactForm() {
     const [isLoading, setLoading] = React.useState(false);;
@@ -16,20 +17,41 @@ function ContactForm() {
         setLoading(true);
 
         try {
-            const data = {
-                email: emailRef.current.value,
-                fullname: fullnameRef.current.value,
+            const emailData = {
+                from: emailRef.current.value,
+                name: fullnameRef.current.value,
                 message: messageRef.current.value
             }
 
-            await SendMail(data.fullname, data.message, data.email);
-
+            await axios.post('https://api.brevo.com/v3/smtp/email',
+                {
+                    sender: {
+                        "name": 'inScript',
+                        "email": 'support@inscripconnect.space'
+                    },
+                    to: [
+                        {
+                            "email": "gokebello@gmail.com",
+                            "name": "Goke Bello"
+                        }
+                    ],
+                    subject: "Email From Personal Website",
+                    "htmlContent": JSON.stringify(emailData)
+                },
+                {
+                    headers: {
+                        'api-key': variables.MAIL_API_KEY,
+                        'accept': 'application/json',
+                        'content-type': 'application/json'
+                    }
+                }
+            );
             setLoading(false);
             ToggleToast(true, "Message sent successfully", true);
             return event.target.reset();
         }
         catch (error) {
-            HandleShow(true, "Error sending email. Try again", false);
+            ToggleToast(true, "Error sending email. Try again", false);
             return setLoading(false);
         }
     }

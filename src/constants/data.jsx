@@ -113,7 +113,7 @@ const projects = [
         img: assets.insc_web_1,
         imgs: [assets.insc_web_2, assets.insc_web_3, assets.insc_web_4, assets.insc_web_5],
         repo: null,
-        link: 'https://inscript-a7ed3.web.app'
+        link: 'https://inscript-572e9.web.app'
     },
     {
         id: 5,
@@ -128,7 +128,7 @@ const projects = [
         img: assets.finder_1,
         imgs: [assets.finder_1, assets.finder_2, assets.finder_3],
         repo: 'https://github.com/DanielBello7/Simple-Search-Engine.git',
-        link: 'https://find-search-application.web.app'
+        link: 'https://finder-5582a.web.app'
     },
     {
         id: 6,

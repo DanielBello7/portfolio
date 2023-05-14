@@ -2,7 +2,7 @@
 import user_img1 from '../assets/user/img01.jpg';
 import user_img2 from '../assets/user/img02.jpg';
 import user_img3 from '../assets/user/img03.jpg';
-
+import user_img4 from '../assets/user/passport.jpg';
 
 // 1-insc-web-app
 import insc_web_app_1 from '../assets/1-insc-web-app/img1.jpg';
@@ -106,6 +106,7 @@ export {
   user_img1,
   user_img2,
   user_img3,
+  user_img4,
 
   insc_web_app_1,
   insc_web_app_2,

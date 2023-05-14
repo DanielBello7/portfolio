@@ -74,7 +74,7 @@ function Resume() {
                     <Fade delay={500} triggerOnce>
                         <div id="center-img">
                             <img
-                                src={assets.user_img2}
+                                src={assets.user_img1}
                                 id="user-img"
                                 alt="user-img"
                             />
