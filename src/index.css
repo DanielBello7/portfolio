@@ -27,6 +27,11 @@ body {
   font-size: 0.9rem;
 }
 
+.btn2:hover {
+  background-color: black;
+  color: white;
+}
+
 .txts {
   letter-spacing: -2px;
   font-weight: bold;
@@ -60,7 +65,7 @@ body {
 
 .tag,
 .tags {
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   border: 0px solid black;
   display: inline;
   padding: 5px 10px;
@@ -71,7 +76,7 @@ body {
 }
 
 .tags {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   margin: 0px;
   padding: 10px 15px;
   display: flex;
@@ -79,6 +84,7 @@ body {
   justify-content: center;
   margin-right: 5px;
   cursor: pointer;
+  font-weight: 900;
 }
 
 .tags:hover {
@@ -138,6 +144,7 @@ body {
 }
 
 #my-email {
+  color: black;
   letter-spacing: -1px;
   cursor: pointer;
 }

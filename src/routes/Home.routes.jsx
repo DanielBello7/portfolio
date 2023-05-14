@@ -1,22 +1,25 @@
 import Landing from '../components/LandingComponent';
 import Contact from '../components/ContactComponent';
-import Work from '../components/WorkComponent';
+import WorkComponent from '../components/WorkComponent';
 import Resume from '../components/ResumeComponent';
 import React from 'react';
 
 function Home() {
     return (
-        <main className="container-xl w-100 d-flex flex-column overflow-hidden">
-            <Landing />
-            <br /><br />
+        <main className={`container-xl w-100 d-flex flex-column`}>
+            {/* <Landing />
+            <br />
+            <br /> */}
 
-            {/* <Work />
-            <br /><br />
+            {/* <WorkComponent />
+            <br />
+            <br /> */}
 
-            <Resume />
-            <br /><br />
+            {/* <Resume />
+            <br />
+            <br /> */}
 
-            <Contact /> */}
+            <Contact />
         </main>
     );
 }

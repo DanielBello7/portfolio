@@ -3,7 +3,7 @@ import React from 'react';
 
 function Footer() {
     return (
-        <footer className='w-100 p-2 d-flex flex-row justify-content-between align-items-center bg-light'>
+        <footer className='container-xl w-100 p-2 d-flex flex-row justify-content-between align-items-center bg-light'>
             <Logo />
             <p className='p-0 m-0 text-muted'>
                 <span>Website by</span>

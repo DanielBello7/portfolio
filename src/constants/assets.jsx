@@ -1,6 +1,7 @@
 // user images
 import user_img1 from '../assets/user/img01.jpg';
 import user_img2 from '../assets/user/img02.jpg';
+import user_img3 from '../assets/user/img03.jpg';
 
 
 // 1-insc-web-app
@@ -66,10 +67,45 @@ import finder_2 from '../assets/9-finder/img36.png';
 import finder_3 from '../assets/9-finder/img37.png';
 
 
+// 10-firma
+import frima_1 from '../assets/10-firma/firma-1.jpg';
+import frima_2 from '../assets/10-firma/firma-2.jpg';
+import frima_3 from '../assets/10-firma/firma-3.jpg';
+import frima_4 from '../assets/10-firma/firma-4.jpg';
 
-const imgs = {
+
+// 11-clrs
+import clrs_1 from '../assets/11-clrs/clrs-1.jpg';
+import clrs_2 from '../assets/11-clrs/clrs-2.jpg';
+import clrs_3 from '../assets/11-clrs/clrs-3.jpg';
+import clrs_4 from '../assets/11-clrs/clrs-4.jpg';
+
+
+// 12-farm
+import farm_1 from '../assets/12-farm/farm-1.jpg';
+import farm_2 from '../assets/12-farm/farm-2.jpg';
+import farm_3 from '../assets/12-farm/farm-3.jpg';
+import farm_4 from '../assets/12-farm/farm-4.jpg';
+
+export {
+  frima_1,
+  frima_2,
+  frima_3,
+  frima_4,
+
+  farm_1,
+  farm_2,
+  farm_3,
+  farm_4,
+
+  clrs_1,
+  clrs_2,
+  clrs_3,
+  clrs_4,
+
   user_img1,
   user_img2,
+  user_img3,
 
   insc_web_app_1,
   insc_web_app_2,
@@ -117,5 +153,3 @@ const imgs = {
   finder_2,
   finder_3,
 }
-
-export default imgs;

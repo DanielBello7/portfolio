@@ -2,7 +2,6 @@ import { experience, skills } from '../constants';
 import { FaDownload } from 'react-icons/fa';
 import { assets } from '../constants';
 import { Fade } from 'react-awesome-reveal';
-import DotsBox from '../modules/DotsBox';
 import React from 'react';
 
 function WorkExperience({ title, location, period }) {
@@ -16,12 +15,15 @@ function WorkExperience({ title, location, period }) {
 }
 
 function Resume() {
-
     const output = experience.map((item, index) => {
-        return <WorkExperience key={index}
-            title={item.title}
-            location={item.location}
-            period={item.period} />
+        return (
+            <WorkExperience
+                key={index}
+                title={item.title}
+                location={item.location}
+                period={item.period}
+            />
+        )
     });
 
     const skillsOutput = skills.map((skill, index) => (
@@ -34,10 +36,6 @@ function Resume() {
 
                 <div className='w-100 position-relative'>
                     <h3 className='h1 txt fw-bold resume'>
-                        {/* <div id="skewed"></div>
-      <div id="handle">
-      <DotsBox amount={133} color={"rgb(0, 0, 0, 0.2)"} height={"150px"} width={"250px"}/>
-      </div> */}
                         <Fade triggerOnce>
                             <a id="resume" href='#!' className='text-decoration-none text-dark'>Resume</a>
                         </Fade>
@@ -46,11 +44,14 @@ function Resume() {
 
                 <Fade triggerOnce>
                     <p className='text-center text-muted' id="resume-text">
-                        My journey so far as a software engineer,
+                        My journey so far as a computer engineer,
                         specializing in full-stack software development
-                        started 6 years ago when i enroled in a c++ course
-                        in school. Whithin the following year i continued
-                        and developed my skills in web development
+                        started in school. The following years saw me
+                        develop my skills in web development.
+                        After school i progressed with me
+                        developing my skills as a software engineer,
+                        focusing on networking, software development,
+                        DevOps and space technology engineering.
                     </p>
                 </Fade>
             </div>
@@ -71,7 +72,13 @@ function Resume() {
 
                 <div className='col-12 col-md-4 col-lg-4 d-flex justify-content-center align-items-center'>
                     <Fade delay={500} triggerOnce>
-                        <div id="center-img"><img src={assets.user_img2} id="user-img" alt="user-img" /></div>
+                        <div id="center-img">
+                            <img
+                                src={assets.user_img2}
+                                id="user-img"
+                                alt="user-img"
+                            />
+                        </div>
                     </Fade>
                 </div>
             </div>
@@ -90,7 +97,7 @@ function Resume() {
 
             <div className='col-12 col-md-9 col-lg-9 my-5 text-center'>
                 <Fade triggerOnce>
-                    <h3 className='h1 txt fw-bold bg-dark text-white d-inline'>Skills and Tools</h3>
+                    <h3 className='h1 txt fw-bold bg-dark text-white d-inline'>Skills and Technologies</h3>
                 </Fade>
                 <div className='mt-5 w-100 row gx-1 m-0 text-center'>
                     <Fade triggerOnce className='col-4' cascade duration={200}>
@@ -102,9 +109,11 @@ function Resume() {
             <div className='col-9 my-5 text-center'>
                 <Fade>
                     <p>Download my resume as a PDF file</p>
-                    <a href="/assets/Daniel-Bello-Resume.pdf"
+                    <a
+                        href="/assets/Daniel-Bello-Resume.pdf"
                         download="Daniel Bello Resume.pdf"
-                        className='btn btn-dark px-4'>
+                        className='btn btn-dark px-4'
+                    >
                         <FaDownload className='me-2' />
                         <span>Download (1.9MB)</span>
                     </a>
