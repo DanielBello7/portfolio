@@ -65,11 +65,11 @@ function WorkComponent() {
         <React.Fragment>
             <div className='d-flex flex-column my-5 align-items-center'>
                 <WorkIntro />
-                <div className='mt-5 mb-3 d-flex flex-row overflow-hidden flex-warp align-items-center justify-content-center' id="tabsLine">
+                {/* <div className='mt-5 mb-3 d-flex flex-row overflow-hidden flex-warp align-items-center justify-content-center' id="tabsLine">
                     <Fade triggerOnce cascade duration={500}>
                         {tabOutput}
                     </Fade>
-                </div>
+                </div> */}
                 <div className='col-12 col-md-12 col-lg-10 my-4 d-flex flex-row flex-warp'>
                     <div className='w-100 m-0 p-0 row g-4'>
                         <Fade direction='up' cascade triggerOnce duration={1000} className="col-12 col-md-4 col-lg-4">

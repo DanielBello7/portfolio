@@ -154,13 +154,13 @@ const experience = [
         id: 1,
         title: 'Senior Software Engineer (Communications Satellite Engineer)',
         location: 'Defence Space Administration',
-        period: 'April 2021 - January 2023'
+        period: 'April 2021 - March 2023'
     },
     {
         id: 2,
-        title: 'Backend Developer',
+        title: 'Full-Stack Developer',
         location: 'Chowberry',
-        period: 'March 2020 - June 2022'
+        period: 'June 2021 - December 2022'
     },
     {
         id: 3,
@@ -172,13 +172,13 @@ const experience = [
         id: 4,
         title: 'Full-Stack Developer',
         location: 'inScript',
-        period: 'Febuary 2019 - December 2021'
+        period: 'December 2020 - December 2021'
     },
     {
         id: 5,
         title: 'Full-Stack Developer',
         location: 'Freelance',
-        period: 'December 2018 - Present'
+        period: 'Febuary 2020 - Present'
     }
 ]
 
