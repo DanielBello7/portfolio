@@ -1,67 +1,67 @@
 import * as assets from './assets';
 
-const out_dated = [
-    {
-        id: 1,
-        title: 'Frontend Social Media App',
-        tags: ['HTML & CSS', 'ReactJS', 'Typescript', 'Javascript', 'Firebase'],
-        desc: `This is the website for the inScript system. Version 2.1.1`,
-        more: `The system was built with HTML5 and CSS and used ThreeJS for the few design elements and concepts within the website. The backend was created with firebase firestore.`,
-        role: 'Full-Stack',
-        img: assets.social_app_1,
-        imgs: [assets.social_app_2, assets.social_app_3, assets.social_app_4, assets.social_app_5],
-        repo: 'https://github.com/DanielBello7/simple-communication-system.git',
-        link: 'https://quick-social-application.web.app'
-    },
-    {
-        id: 2,
-        title: 'inScript Connect Web App',
-        tags: ['Typescript', 'Bootstrap 5', 'ReactJS'],
-        desc: `A web application for the Twitter-type social media system. Version 1.11.1`,
-        more: `It was built with react as the frontend, NodeJS as the server, firebase hosting, and MongoDB as the database. It was built for handling basic social media functions such as making posts and interactions with those posts and users and has algorithms for handling what each user sees.`,
-        role: 'Full-Stack',
-        img: assets.insc_web_app_1,
-        imgs: [assets.insc_web_app_1, assets.insc_web_app_2, assets.insc_web_app_3, assets.insc_web_app_4],
-        repo: 'https://github.com/DanielBello7/inScript',
-        link: 'https://inscript-connect.web.app'
-    },
-    {
-        id: 3,
-        title: 'NFT Marketplace Mobile App',
-        tags: ['React Native', 'Typescript'],
-        desc: `This is a front-end mobile app created with react native currently on the Expo servers.`,
-        more: `Hasn’t been deployed to the App Store or Google Play store.`,
-        role: 'Front-end',
-        img: assets.nft_1,
-        imgs: [assets.nft_2, assets.nft_3, assets.nft_4, assets.nft_5],
-        repo: null,
-        link: 'https://expo.dev/@chaseofficial/NFT-Market-Place?serviceType=classic&distribution=expo-go'
-    },
-    {
-        id: 4,
-        title: 'E-commerce Mobile App',
-        tags: ['React Native', 'Typescript'],
-        desc: `This is a frontend mobile application for a quick sharing of goods and services.`,
-        more: `This connects goods owners to people in search of those goods and services. Uses ReactJS and is hosted on Heroku.`,
-        role: 'Front-end',
-        img: assets.corner_market_1,
-        imgs: [assets.corner_market_2, assets.corner_market_3, assets.corner_market_4],
-        repo: null,
-        link: 'https://expo.dev/@chaseofficial/Croner-MarketPlace?serviceType=classic&distribution=expo-go'
-    },
-    {
-        id: 5,
-        title: 'Social-Connect Web App',
-        tags: ['NodeJS', 'HTML & CSS', 'Typescript', 'Javascript', 'EJS'],
-        desc: `This is a login application that was created using template engines.`,
-        more: `The application was created using EJS. Mostly hosted on the server. It is completely dynamic and loads resources from a database. The database being used here is MongoDB.`,
-        role: 'Front-end',
-        img: assets.ejs_auth_1,
-        imgs: [assets.ejs_auth_1, assets.ejs_auth_2, assets.ejs_auth_3],
-        repo: null,
-        link: 'https://api-handy.herokuapp.com/'
-    },
-]
+// const out_dated = [
+//     {
+//         id: 1,
+//         title: 'Frontend Social Media App',
+//         tags: ['HTML & CSS', 'ReactJS', 'Typescript', 'Javascript', 'Firebase'],
+//         desc: `This is the website for the inScript system. Version 2.1.1`,
+//         more: `The system was built with HTML5 and CSS and used ThreeJS for the few design elements and concepts within the website. The backend was created with firebase firestore.`,
+//         role: 'Full-Stack',
+//         img: assets.social_app_1,
+//         imgs: [assets.social_app_2, assets.social_app_3, assets.social_app_4, assets.social_app_5],
+//         repo: 'https://github.com/DanielBello7/simple-communication-system.git',
+//         link: 'https://quick-social-application.web.app'
+//     },
+//     {
+//         id: 2,
+//         title: 'inScript Connect Web App',
+//         tags: ['Typescript', 'Bootstrap 5', 'ReactJS'],
+//         desc: `A web application for the Twitter-type social media system. Version 1.11.1`,
+//         more: `It was built with react as the frontend, NodeJS as the server, firebase hosting, and MongoDB as the database. It was built for handling basic social media functions such as making posts and interactions with those posts and users and has algorithms for handling what each user sees.`,
+//         role: 'Full-Stack',
+//         img: assets.insc_web_app_1,
+//         imgs: [assets.insc_web_app_1, assets.insc_web_app_2, assets.insc_web_app_3, assets.insc_web_app_4],
+//         repo: 'https://github.com/DanielBello7/inScript',
+//         link: 'https://inscript-connect.web.app'
+//     },
+//     {
+//         id: 3,
+//         title: 'NFT Marketplace Mobile App',
+//         tags: ['React Native', 'Typescript'],
+//         desc: `This is a front-end mobile app created with react native currently on the Expo servers.`,
+//         more: `Hasn’t been deployed to the App Store or Google Play store.`,
+//         role: 'Front-end',
+//         img: assets.nft_1,
+//         imgs: [assets.nft_2, assets.nft_3, assets.nft_4, assets.nft_5],
+//         repo: null,
+//         link: 'https://expo.dev/@chaseofficial/NFT-Market-Place?serviceType=classic&distribution=expo-go'
+//     },
+//     {
+//         id: 4,
+//         title: 'E-commerce Mobile App',
+//         tags: ['React Native', 'Typescript'],
+//         desc: `This is a frontend mobile application for a quick sharing of goods and services.`,
+//         more: `This connects goods owners to people in search of those goods and services. Uses ReactJS and is hosted on Heroku.`,
+//         role: 'Front-end',
+//         img: assets.corner_market_1,
+//         imgs: [assets.corner_market_2, assets.corner_market_3, assets.corner_market_4],
+//         repo: null,
+//         link: 'https://expo.dev/@chaseofficial/Croner-MarketPlace?serviceType=classic&distribution=expo-go'
+//     },
+//     {
+//         id: 5,
+//         title: 'Social-Connect Web App',
+//         tags: ['NodeJS', 'HTML & CSS', 'Typescript', 'Javascript', 'EJS'],
+//         desc: `This is a login application that was created using template engines.`,
+//         more: `The application was created using EJS. Mostly hosted on the server. It is completely dynamic and loads resources from a database. The database being used here is MongoDB.`,
+//         role: 'Front-end',
+//         img: assets.ejs_auth_1,
+//         imgs: [assets.ejs_auth_1, assets.ejs_auth_2, assets.ejs_auth_3],
+//         repo: null,
+//         link: 'https://api-handy.herokuapp.com/'
+//     },
+// ]
 
 const projects = [
     {

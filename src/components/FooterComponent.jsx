@@ -1,6 +1,5 @@
 import { FormattedMessage } from 'react-intl';
 import Logo from '../modules/Logo';
-import React from 'react';
 
 export default function Footer() {
 	return (

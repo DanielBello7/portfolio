@@ -1,6 +1,5 @@
 import { FormattedMessage } from "react-intl";
 import { Fade } from 'react-awesome-reveal';
-import React from 'react';
 
 export default function LandingText() {
   return (

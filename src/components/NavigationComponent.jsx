@@ -1,8 +1,7 @@
 import { FormattedMessage } from 'react-intl';
 import { Fade } from 'react-awesome-reveal';
-import React from 'react';
 
-export default function Navigation() {
+export default function NavigationComponent() {
   return (
     <div className="d-flex flex-row my-3 my-md-0 my-lg-0">
       <Fade

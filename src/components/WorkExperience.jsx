@@ -1,6 +1,5 @@
-import React from 'react';
-
-export default function WorkExperience({ title, location, period }) {
+export default function WorkExperience(props) {
+  const { title, location, period } = props;
   return (
     <div className='col-12 col-md-12 col-lg-12'>
       <h5 className='fw-bold txt h4 mt-5'>{title}</h5>

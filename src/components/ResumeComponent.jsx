@@ -3,7 +3,6 @@ import { FormattedMessage } from 'react-intl';
 import { FaDownload } from 'react-icons/fa';
 import { assets } from '../constants';
 import { Fade } from 'react-awesome-reveal';
-import React from 'react';
 import WorkExperience from './WorkExperience';
 
 export default function Resume() {

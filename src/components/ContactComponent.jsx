@@ -1,7 +1,6 @@
 import { FormattedMessage } from 'react-intl';
 import { FaArrowRight } from 'react-icons/fa';
 import { Fade } from 'react-awesome-reveal';
-import React from 'react';
 import ContactForm from './ContactForm';
 
 export default function Contact() {

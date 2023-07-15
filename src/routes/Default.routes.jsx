@@ -1,7 +1,6 @@
 import { FormattedMessage } from 'react-intl';
 import { FaArrowLeft } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import React from 'react';
 
 export default function Default() {
     return (
