@@ -2,7 +2,6 @@ import Landing from '../components/LandingComponent';
 import Contact from '../components/ContactComponent';
 import WorkComponent from '../components/WorkComponent';
 import Resume from '../components/ResumeComponent';
-import React from 'react';
 
 export default function Home() {
 	return (

@@ -1,6 +1,5 @@
 import { assets } from '../constants';
 import { Fade } from 'react-awesome-reveal';
-import React from 'react';
 
 export default function LandingImage() {
   return (
