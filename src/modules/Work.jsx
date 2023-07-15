@@ -1,7 +1,8 @@
+import { FormattedMessage } from 'react-intl';
 import { FaEye, FaGithub } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 
-function Work({ id, title, tags, desc, img, repo, link, handleClick }) {
+export default function Work({ id, title, tags, desc, img, repo, link, handleClick }) {
     const navigate = useNavigate();
     const HandleNavigation = () => navigate(`/project/${id}`);
 
@@ -42,7 +43,9 @@ function Work({ id, title, tags, desc, img, repo, link, handleClick }) {
                     target="_blank"
                 >
                     <FaEye className='me-2' />
-                    <span>Preview</span>
+                    <span>
+                        <FormattedMessage id="workPreviewButton" />
+                    </span>
                 </a>
                 <a
                     className='btn btn4 ms-2'
@@ -51,11 +54,11 @@ function Work({ id, title, tags, desc, img, repo, link, handleClick }) {
                     onClick={() => !repo && handleClick()}
                 >
                     <FaGithub className='me-2' />
-                    <span>GitHub Repo</span>
+                    <span>
+                        <FormattedMessage id="workGithubButton" />
+                    </span>
                 </a>
             </div>
         </div>
     );
 }
-
-export default Work;
