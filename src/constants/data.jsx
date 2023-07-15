@@ -152,33 +152,39 @@ const projects = [
 const experience = [
     {
         id: 1,
-        title: 'Senior Software Engineer (Communications Satellite Engineer)',
+        title: 'Software Engineer',
         location: 'Defence Space Administration',
-        period: 'April 2021 - March 2023'
+        period: 'April 2021 - Present'
     },
     {
         id: 2,
-        title: 'Full-Stack Developer',
-        location: 'Chowberry',
-        period: 'June 2021 - December 2022'
+        title: 'Full Stack Developer',
+        location: 'Gallery of Code',
+        period: 'January 2022 - December 2022'
     },
     {
         id: 3,
-        title: 'Senior Software Engineer (Technological Manager)',
+        title: 'Frontend Engineer',
+        location: 'Gallery of Code',
+        period: 'June 2021 - December 2021'
+    },
+    {
+        id: 4,
+        title: 'Product Engineer',
         location: 'Pan-African Renaissance Vocational Institute',
         period: 'August 2021 - March 2022'
     },
     {
-        id: 4,
-        title: 'Full-Stack Developer',
+        id: 5,
+        title: 'Full Stack Engineer',
         location: 'inScript',
         period: 'December 2020 - December 2021'
     },
     {
-        id: 5,
-        title: 'Full-Stack Developer',
-        location: 'Freelance',
-        period: 'Febuary 2020 - Present'
+        id: 6,
+        title: 'Junior Frontent Engineer',
+        location: 'inScript',
+        period: 'September 2019 - December 2020'
     }
 ]
 
@@ -203,7 +209,8 @@ const skills = [
     'Firebase',
     'MongoDB',
     'MySQL',
-    'DevOps'
+    'DevOps',
+    'AWS'
 ]
 
 const tabs = [
