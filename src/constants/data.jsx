@@ -87,7 +87,7 @@ const projects = [
         img: assets.clrs_1,
         imgs: [assets.clrs_1, assets.clrs_2, assets.clrs_3, assets.clrs_4],
         repo: null,
-        link: 'https://deltastatecaselaw.com/'
+        link: 'https://caselaw.moj.dl.gov.ng/'
     },
     {
         id: 3,
