@@ -1,8 +1,8 @@
 import { IntlProvider } from 'react-intl';
 import React from 'react';
-import ToastComponent from './components/ToastComponent';
+import Toast from "@/components/toast";
 import useStringResources from './hooks/useStringResource';
-import MainApp from './MainApp';
+import MainApp from './main-app';
 
 function App() {
     const locale = navigator.language || 'en';
@@ -11,10 +11,11 @@ function App() {
         <React.Fragment>
             <IntlProvider locale={locale} messages={messages}>
                 <MainApp />
-                <ToastComponent />
+                <Toast />
             </IntlProvider>
         </React.Fragment>
     )
 }
 
 export default React.memo(App);
+

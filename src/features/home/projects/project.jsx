@@ -2,8 +2,18 @@ import { FormattedMessage } from 'react-intl';
 import { FaEye, FaGithub } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 
-export default function Work(props) {
-	const { id, title, tags, desc, img, repo, link, handleClick } = props;
+export default function Project(props) {
+	const {
+		id,
+		title,
+		tags,
+		desc,
+		img,
+		repo,
+		link,
+		handleClick
+	} = props;
+
 	const navigate = useNavigate();
 	const HandleNavigation = () => navigate(`/project/${id}`);
 
@@ -65,3 +75,4 @@ export default function Work(props) {
 		</div>
 	);
 }
+

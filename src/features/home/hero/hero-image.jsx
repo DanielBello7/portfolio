@@ -1,7 +1,7 @@
-import { assets } from '../constants';
+import { assets } from '@/constants';
 import { Fade } from 'react-awesome-reveal';
 
-export default function LandingImage() {
+export default function HeroImage() {
   return (
     <div id="landing-image" className='w-100 position-relative' style={{ height: '350px' }}>
       <Fade triggerOnce duration={1000} delay={2000}>
@@ -16,3 +16,4 @@ export default function LandingImage() {
     </div >
   )
 }
+

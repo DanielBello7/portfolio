@@ -1,4 +1,4 @@
-import en from '../locale/en.json';
+import en from '@/locale/en.json';
 
 export default function useStringResources() {
   const messages = {

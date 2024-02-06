@@ -1,7 +1,7 @@
 import { FormattedMessage } from "react-intl";
 import { Fade } from 'react-awesome-reveal';
 
-export default function LandingText() {
+export default function HeroText() {
   return (
     <div className='ms-0 ms-md-4 ms-lg-4 mb-5 mb-md-0 mb-lg-0 text-center text-md-start text-lg-start'>
 
@@ -42,3 +42,4 @@ export default function LandingText() {
     </div>
   )
 }
+

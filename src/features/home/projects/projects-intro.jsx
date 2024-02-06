@@ -1,7 +1,7 @@
 import { FormattedMessage } from 'react-intl';
 import { Fade } from 'react-awesome-reveal';
 
-export default function WorkIntro() {
+export default function ProjectsIntro() {
   return (
     <div className='d-flex flex-column justify-content-center align-items-center'>
       <Fade triggerOnce duration={1000}>

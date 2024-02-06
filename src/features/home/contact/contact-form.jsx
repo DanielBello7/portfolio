@@ -1,8 +1,8 @@
 import { FormattedMessage } from 'react-intl';
 import { FaPaperPlane } from 'react-icons/fa';
-import { variables } from '../constants';
-import { useModalData } from '../ModalContext';
-import React from 'react';
+import { variables } from '@/constants';
+import { useModalData } from '@/modal-context.jsx';
+import * as React from 'react';
 import axios from 'axios';
 
 export default function ContactForm() {
@@ -132,3 +132,4 @@ export default function ContactForm() {
     </div>
   )
 }
+
