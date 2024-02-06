@@ -1,6 +1,8 @@
 import { FormattedMessage } from 'react-intl';
 import { FaEye, FaGithub } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
+import { motion } from "framer-motion";
+import { item } from "./animation"
 
 export default function Project(props) {
 	const {
@@ -26,7 +28,8 @@ export default function Project(props) {
 	});
 
 	return (
-		<div className='col-12 col-md-12 col-lg-12 d-flex flex-column' id="project" style={{ height: '380px' }}>
+		<motion.div className='col-12 col-md-6 col-lg-4 d-flex flex-column' id="project" style={{ height: '380px' }}
+			variants={item}>
 			<div className='w-100' id="asset-img" onClick={HandleNavigation} style={{ height: '55%' }}>
 				<img
 					className="w-100 border border-2 rounded-4 mb-2 h-100 asst-img"
@@ -72,7 +75,7 @@ export default function Project(props) {
 					</span>
 				</a>
 			</div>
-		</div>
+		</motion.div>
 	);
 }
 

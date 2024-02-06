@@ -1,7 +1,7 @@
 import { IntlProvider } from 'react-intl';
 import React from 'react';
 import Toast from "@/components/toast";
-import useStringResources from './hooks/useStringResource';
+import useStringResources from './hooks/use-string-resource';
 import MainApp from './main-app';
 
 function App() {

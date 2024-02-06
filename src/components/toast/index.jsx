@@ -1,10 +1,16 @@
 import { FormattedMessage } from "react-intl";
 import { useModalData } from '@/modal-context.jsx';
 import ToastBody from "./toast-body";
-import React from "react";
+import * as React from "react";
+import classNames from "classnames";
 
 export default function Toast() {
   const { toastMsg } = useModalData();
+  const cn = classNames("toast-header text-white", {
+    "bg-success": toastMsg.type,
+    "bg-danger": !toastMsg.type
+  });
+
   return (
     <div className="position-fixed top-0 end-0 p-3" style={{ zIndex: 11 }}>
       <div
@@ -14,7 +20,7 @@ export default function Toast() {
         aria-live="assertive"
         aria-atomic="true"
       >
-        <div className={`toast-header text-white ${toastMsg.type ? "bg-success" : "bg-danger"}`}>
+        <div className={cn}>
           <strong className="me-auto">
             <FormattedMessage id="tostTitle" />
           </strong>

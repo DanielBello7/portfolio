@@ -25,7 +25,7 @@
   "contactEmailAddress": "gokebello@gmail.com",
   "footerTitle": "Website by",
   "footerSub": "Daniel Bello",
-  "workNavigationTitle": "Work",
+  "workNavigationTitle": "Projects",
   "workNavigationResumeButton": "Resume",
   "workNavigationContactButton": "Contact",
   "landingTextTitle": "Hi, I'm Daniel and I'm a ",
@@ -45,6 +45,6 @@
   "resumeDownload": "Download (840KB)",
   "tostTitle": "Alert",
   "tostSub": "Just now",
-  "workIntroTitle": "Work",
+  "workIntroTitle": "Projects",
   "workIntroMsg": "Check some of my previous work and projects. If you have any questions feel free to ask me for more information."
 }
