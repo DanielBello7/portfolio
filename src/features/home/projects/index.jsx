@@ -22,7 +22,7 @@ export default function Projects() {
         <ProjectsIntro />
         <div className='col-12 col-md-12 col-lg-10 my-4 d-flex flex-row flex-warp'>
           <motion.div className="w-100 m-0 p-0 row g-4 col-12 col-md-4 col-lg-4" variants={container}
-            initial="hidden" whileInView="show" exit="hidden">
+            initial="hidden" whileInView="show" exit="hidden" viewport={{ once: true }}>
             {output}
           </motion.div>
         </div>
