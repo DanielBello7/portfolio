@@ -1,10 +1,10 @@
 import { useParams } from 'react-router-dom';
 import { projects } from '@/constants';
-import * as React from 'react';
 import EmptyProject from "./empty-project"
 import Title from './title';
 import Body from './body';
 import Gallery from './gallery';
+import * as React from 'react';
 
 export default function Project() {
   const [project, setProject] = React.useState(null);

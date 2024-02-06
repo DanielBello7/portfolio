@@ -1,17 +1,17 @@
 export const navigation_items = [
   {
     id: "workNavigationTitle",
-    href: "#work",
+    href: "/home#work",
     title: "work"
   },
   {
     id: "workNavigationResumeButton",
-    href: "#resume",
+    href: "/home#resume",
     title: "resume"
   },
   {
     id: "workNavigationContactButton",
-    href: "#contact",
+    href: "/home#contact",
     title: "contact"
   }
 ]
