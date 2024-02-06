@@ -2,7 +2,7 @@ import * as assets from './assets';
 
 const projects = [
 	{
-		id: 1,
+		id: "1",
 		title: 'Firma Web Application',
 		tags: ['NodeJS', 'Typescript', 'ReactJS', 'Live'],
 		desc: `An application for a company connecting lawyers everywhere accross africa`,
@@ -14,7 +14,7 @@ const projects = [
 		link: 'https://firma.ink/'
 	},
 	{
-		id: 2,
+		id: "2",
 		title: 'Case Law Repository',
 		tags: ['NodeJS', 'Typescript', 'Live'],
 		desc: `An application for allowing access to legal documents made available to the public`,
@@ -27,7 +27,7 @@ const projects = [
 		link: 'https://caselaw.moj.dl.gov.ng/'
 	},
 	{
-		id: 3,
+		id: "3",
 		title: 'Rapture Ranch Web Application',
 		tags: ['NodeJS', 'JavaScript', 'ReactJS', 'Live'],
 		desc: `An application for a company enabling subscribers and partners to invest in the agricultural space`,
@@ -39,7 +39,7 @@ const projects = [
 		link: 'https://raptureranch.farm/'
 	},
 	{
-		id: 4,
+		id: "4",
 		title: 'inScript Website',
 		tags: ['HTML & CSS', 'ThreeJS', 'Firebase'],
 		desc: `This is the website for inScript Company. Version 2.1.1`,
@@ -53,7 +53,7 @@ const projects = [
 		link: 'https://inscript-572e9.web.app'
 	},
 	{
-		id: 5,
+		id: "5",
 		title: 'Finder Web App',
 		tags: ['Typescript', 'Javascript', 'Tailwind', 'ReactJS'],
 		desc: `The web application find is a search engine system that was built with TailwindCSS.`,
@@ -68,7 +68,7 @@ const projects = [
 		link: 'https://finder-5582a.web.app'
 	},
 	{
-		id: 6,
+		id: "6",
 		title: 'inScript Connect Mobile App',
 		tags: ['Typescript', 'React Native', 'ReactJS'],
 		desc: `This is the mobile application for the 
