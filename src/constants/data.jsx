@@ -32,7 +32,7 @@ const experience = [
 		id: 1,
 		title: 'Software Engineer',
 		location: 'Defence Space Administration',
-		period: 'April 2021 - Present'
+		period: 'April 2021 - October 2023'
 	},
 	{
 		id: 2,
@@ -69,6 +69,7 @@ const experience = [
 const skills = [
 	'Full-Stack Development',
 	'Test-Driven Development',
+	'CI/CD',
 	'RESTful API',
 	'JavaScript',
 	'TypeScript',

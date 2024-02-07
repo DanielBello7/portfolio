@@ -20,7 +20,6 @@ function ModalContextProvider(props) {
 		<ModalContext.Provider value={{
 			setToastMsg,
 			toastMsg,
-
 			ToggleToast
 		}}>
 			{props.children}
