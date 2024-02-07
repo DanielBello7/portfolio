@@ -9,7 +9,7 @@ export default function Home() {
     <motion.main className={`container-xl w-100 d-flex flex-column`}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 2, ease: "easeInOut" }}
+      transition={{ duration: 0.5, ease: "easeInOut" }}
       exit={{ opacity: 0 }}
     >
       <Hero />
