@@ -1,156 +1,36 @@
 // user images
-import user_img1 from '../assets/user/img01.jpg';
-import user_img2 from '../assets/user/img02.jpg';
-import user_img3 from '../assets/user/img03.jpg';
-import user_img4 from '../assets/user/passport.jpg';
+import user_img1 from '@/assets/user/img01.jpg';
+import user_img2 from '@/assets/user/img02.jpg';
+import user_img3 from '@/assets/user/img03.jpg';
+import user_img4 from '@/assets/user/passport.jpg';
 
-// 1-insc-web-app
-import insc_web_app_1 from '../assets/1-insc-web-app/img1.jpg';
-import insc_web_app_2 from '../assets/1-insc-web-app/img2.jpg';
-import insc_web_app_3 from '../assets/1-insc-web-app/img3.jpg';
-import insc_web_app_4 from '../assets/1-insc-web-app/img4.png';
-import insc_web_app_5 from '../assets/1-insc-web-app/img5.jpg';
+// nosql-json-database
+import nosql_json_database_1 from "@/assets/1-nosql-json-database/nosql-json-database-1.png";
+import nosql_json_database_2 from "@/assets/1-nosql-json-database/nosql-json-database-2.png";
+import nosql_json_database_3 from "@/assets/1-nosql-json-database/nosql-json-database-3.png";
+import nosql_json_database_4 from "@/assets/1-nosql-json-database/nosql-json-database-4.png";
 
+// figma-clone
+import figma_clone_1 from "@/assets/2-figma-clone/figma-clone-1.png";
+import figma_clone_2 from "@/assets/2-figma-clone/figma-clone-2.png";
+import figma_clone_3 from "@/assets/2-figma-clone/figma-clone-3.png";
+import figma_clone_4 from "@/assets/2-figma-clone/figma-clone-4.png";
 
-// 2-insc-web
-import insc_web_1 from '../assets/2-insc-web/img6.jpg';
-import insc_web_2 from '../assets/2-insc-web/img7.jpg';
-import insc_web_3 from '../assets/2-insc-web/img8.jpg';
-import insc_web_4 from '../assets/2-insc-web/img9.jpg';
-import insc_web_5 from '../assets/2-insc-web/img10.jpg';
-
-
-// 3-iml-web
-
-
-// 4-ejs-auth
-import ejs_auth_1 from '../assets/4-ejs-auth/img11.jpg';
-import ejs_auth_2 from '../assets/4-ejs-auth/img12.jpg';
-import ejs_auth_3 from '../assets/4-ejs-auth/img13.jpg';
-
-
-// 5-react-auth
-import social_app_1 from '../assets/5-social-app/img14.png';
-import social_app_2 from '../assets/5-social-app/img15.png';
-import social_app_3 from '../assets/5-social-app/img16.png';
-import social_app_4 from '../assets/5-social-app/img17.png';
-import social_app_5 from '../assets/5-social-app/img18.png';
-
-// 6-nft-market
-import nft_1 from '../assets/6-nft-market/0019.png';
-import nft_2 from '../assets/6-nft-market/0020.png';
-import nft_3 from '../assets/6-nft-market/0021.png';
-import nft_4 from '../assets/6-nft-market/0022.png';
-import nft_5 from '../assets/6-nft-market/0023.png';
-
-
-// 7-insc-mobile
-import insc_mobile_1 from '../assets/7-insc-mobile/0024.png';
-import insc_mobile_2 from '../assets/7-insc-mobile/0025.png';
-import insc_mobile_3 from '../assets/7-insc-mobile/0026.png';
-import insc_mobile_4 from '../assets/7-insc-mobile/0027.png';
-import insc_mobile_5 from '../assets/7-insc-mobile/0028.png';
-import insc_mobile_6 from '../assets/7-insc-mobile/0029.png';
-import insc_mobile_7 from '../assets/7-insc-mobile/0030.png';
-
-
-// 8-corner-market
-import corner_market_1 from '../assets/8-corner-market/0031.png'
-import corner_market_2 from '../assets/8-corner-market/0032.png'
-import corner_market_3 from '../assets/8-corner-market/0033.png'
-import corner_market_4 from '../assets/8-corner-market/0034.png'
-
-
-// 9-finder
-import finder_1 from '../assets/9-finder/img35.png';
-import finder_2 from '../assets/9-finder/img36.png';
-import finder_3 from '../assets/9-finder/img37.png';
-
-
-// 10-firma
-import frima_1 from '../assets/10-firma/firma-1.jpg';
-import frima_2 from '../assets/10-firma/firma-2.jpg';
-import frima_3 from '../assets/10-firma/firma-3.jpg';
-import frima_4 from '../assets/10-firma/firma-4.jpg';
-
-
-// 11-clrs
-import clrs_1 from '../assets/11-clrs/clrs-1.jpg';
-import clrs_2 from '../assets/11-clrs/clrs-2.jpg';
-import clrs_3 from '../assets/11-clrs/clrs-3.jpg';
-import clrs_4 from '../assets/11-clrs/clrs-4.jpg';
-
-
-// 12-farm
-import farm_1 from '../assets/12-farm/farm-1.jpg';
-import farm_2 from '../assets/12-farm/farm-2.jpg';
-import farm_3 from '../assets/12-farm/farm-3.jpg';
-import farm_4 from '../assets/12-farm/farm-4.jpg';
 
 export {
-  frima_1,
-  frima_2,
-  frima_3,
-  frima_4,
-
-  farm_1,
-  farm_2,
-  farm_3,
-  farm_4,
-
-  clrs_1,
-  clrs_2,
-  clrs_3,
-  clrs_4,
-
   user_img1,
   user_img2,
   user_img3,
   user_img4,
 
-  insc_web_app_1,
-  insc_web_app_2,
-  insc_web_app_3,
-  insc_web_app_4,
-  insc_web_app_5,
+  nosql_json_database_1,
+  nosql_json_database_2,
+  nosql_json_database_3,
+  nosql_json_database_4,
 
-  insc_web_1,
-  insc_web_2,
-  insc_web_3,
-  insc_web_4,
-  insc_web_5,
-
-
-  ejs_auth_1,
-  ejs_auth_2,
-  ejs_auth_3,
-
-  social_app_1,
-  social_app_2,
-  social_app_3,
-  social_app_4,
-  social_app_5,
-
-  nft_1,
-  nft_2,
-  nft_3,
-  nft_4,
-  nft_5,
-
-  insc_mobile_1,
-  insc_mobile_2,
-  insc_mobile_3,
-  insc_mobile_4,
-  insc_mobile_5,
-  insc_mobile_6,
-  insc_mobile_7,
-
-  corner_market_1,
-  corner_market_2,
-  corner_market_3,
-  corner_market_4,
-
-  finder_1,
-  finder_2,
-  finder_3,
+  figma_clone_1,
+  figma_clone_2,
+  figma_clone_3,
+  figma_clone_4
 }
+

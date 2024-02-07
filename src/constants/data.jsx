@@ -2,87 +2,28 @@ import * as assets from './assets';
 
 const projects = [
 	{
-		id: "firma-web-app",
-		title: 'Firma Web Application',
-		tags: ['NodeJS', 'Typescript', 'ReactJS', 'Live'],
-		desc: `An application for a company connecting lawyers everywhere accross africa`,
-		more: `The application was built with ReactJS as the front-end and NodeJS as the backend`,
-		role: 'Full-Stack',
-		img: assets.frima_1,
-		imgs: [assets.frima_1, assets.frima_2, assets.frima_3, assets.frima_4],
-		repo: null,
-		link: 'https://firma.ink/'
+		id: "nosql-json-database",
+		title: 'NoSQL Json Database',
+		tags: ['NodeJS', 'Typescript', 'Javascript'],
+		desc: `A Simple and quick database to help development process and speed`,
+		more: `This module aims to help simplify the use of file modules using fs and path whenever developing an application that needs a database but you just don't want to use a standard database due to the long setup or for any other reason`,
+		role: 'Backend Engineer',
+		img: assets.nosql_json_database_1,
+		imgs: [assets.nosql_json_database_1, assets.nosql_json_database_2, assets.nosql_json_database_3, assets.nosql_json_database_4],
+		repo: "https://github.com/DanielBello7/nosql-json-database",
+		link: 'https://www.npmjs.com/package/nosql-json-database'
 	},
 	{
-		id: "case-law-repo",
-		title: 'Case Law Repository',
-		tags: ['NodeJS', 'Typescript', 'Live'],
-		desc: `An application for allowing access to legal documents made available to the public`,
-		more: `The application was built with ReactJS as the front-end and 
-        primarily used Typescript and Python for it's development languages`,
-		role: 'Full-Stack',
-		img: assets.clrs_1,
-		imgs: [assets.clrs_1, assets.clrs_2, assets.clrs_3, assets.clrs_4],
-		repo: null,
-		link: 'https://caselaw.moj.dl.gov.ng/'
-	},
-	{
-		id: "rapture-ranch-web-app",
-		title: 'Rapture Ranch Web Application',
-		tags: ['NodeJS', 'JavaScript', 'ReactJS', 'Live'],
-		desc: `An application for a company enabling subscribers and partners to invest in the agricultural space`,
-		more: `The application was built with ReactJS, Python, NodeJS, and JavaScript as it's technologies`,
-		role: 'Full-Stack',
-		img: assets.farm_1,
-		imgs: [assets.farm_1, assets.farm_2, assets.farm_3, assets.farm_4],
-		repo: null,
-		link: 'https://raptureranch.farm/'
-	},
-	{
-		id: "inscript-website",
-		title: 'inScript Website',
-		tags: ['HTML & CSS', 'ThreeJS', 'Firebase'],
-		desc: `This is the website for inScript Company. Version 2.1.1`,
-		more: `The system was built with HTML5 and CSS and used ThreeJS 
-        for the few design elements and concepts within the website. 
-        The backend was created with firebase firestore.`,
-		role: 'Full-Stack',
-		img: assets.insc_web_1,
-		imgs: [assets.insc_web_2, assets.insc_web_3, assets.insc_web_4, assets.insc_web_5],
-		repo: null,
-		link: 'https://inscript-572e9.web.app'
-	},
-	{
-		id: "finder-web-app",
-		title: 'Finder Web App',
-		tags: ['Typescript', 'Javascript', 'Tailwind', 'ReactJS'],
-		desc: `The web application find is a search engine system that was built with TailwindCSS.`,
-		more: `It was built with Typescript and React and uses 
-        Heroku as the backend. It is an application that allows a 
-        user to upload raw data in JSON format and run a search for 
-        anything and if it’s within the data being provided.`,
-		role: 'Full-Stack',
-		img: assets.finder_1,
-		imgs: [assets.finder_1, assets.finder_2, assets.finder_3],
-		repo: 'https://github.com/DanielBello7/Simple-Search-Engine.git',
-		link: 'https://finder-5582a.web.app'
-	},
-	{
-		id: "inscript-mobile-app",
-		title: 'inScript Connect Mobile App',
-		tags: ['Typescript', 'React Native', 'ReactJS'],
-		desc: `This is the mobile application for the 
-        inScript Connect Social media application.`,
-		more: `It was built with React Native for the mobile 
-        UI and also uses DigitalOcean as the server hosting and 
-        NodeJS for the server. The application runs on both Android 
-        and iOS and is currently being hosted on the Expo platform. 
-        The app was created using Expo support.`,
-		role: 'Full-Stack',
-		img: assets.insc_mobile_1,
-		imgs: [assets.insc_mobile_2, assets.insc_mobile_3, assets.insc_mobile_4, assets.insc_mobile_5],
-		repo: null,
-		link: 'https://expo.dev/@chaseofficial/inScript-Connect?serviceType=classic&distribution=expo-go'
+		id: "figma-store-clone",
+		title: 'Figma Store Clone',
+		tags: ['NodeJS', 'Typescript', 'ViteJS', 'Framer Motion'],
+		desc: `A near perfrct re-make for the figma store website.`,
+		more: `This was an attempt to remake the simple frontend functionalities the site used for it's interface, using raw code and not packages as much as possible`,
+		role: 'Frontend Engineer',
+		img: assets.figma_clone_1,
+		imgs: [assets.figma_clone_1, assets.figma_clone_2, assets.figma_clone_3, assets.figma_clone_4],
+		repo: 'https://github.com/DanielBello7/figma-website-clone',
+		link: 'https://figma.danielbello.dev'
 	}
 ]
 
