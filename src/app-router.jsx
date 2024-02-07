@@ -1,8 +1,8 @@
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence } from "framer-motion";
-import HomePage from './routes/home.routes';
-import ProjectPage from './routes/project.routes';
-import DefaultPage from './routes/default.routes';
+import HomePage from '@/routes/home.routes';
+import ProjectPage from '@/routes/project.routes';
+import DefaultPage from '@/routes/default.routes';
 import Header from '@/components/header';
 import Footer from "@/components/footer"
 import * as React from 'react';
