@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom';
 import { projects } from '@/constants';
-import EmptyProject from "./empty-project"
+import { motion } from 'framer-motion';
+import EmptyProject from "./empty-project";
 import Title from './title';
 import Body from './body';
 import Gallery from './gallery';
@@ -19,12 +20,17 @@ export default function Project() {
 
   if (!project) return <EmptyProject />
   return (
-    <div className='container-xl w-100 d-flex flex-column align-items-center'>
+    <motion.div className='container-xl w-100 d-flex flex-column align-items-center'
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 2, ease: "easeInOut" }}
+    >
       <main className='col-12 col-md-10 col-lg-10 my-5 d-flex flex-column'>
         <Title title={project.title} />
         <Body project={project} />
         <Gallery project={project} />
       </main>
-    </div>
+    </motion.div>
   );
 }

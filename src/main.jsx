@@ -1,5 +1,4 @@
 import { ModalContextProvider } from './modal-context.jsx';
-import { AnimatePresence } from "framer-motion";
 import { BrowserRouter } from 'react-router-dom';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
@@ -9,13 +8,11 @@ import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <AnimatePresence mode="wait">
-      <BrowserRouter>
-        <ModalContextProvider>
-          <App />
-        </ModalContextProvider>
-      </BrowserRouter>
-    </AnimatePresence>
+    <BrowserRouter>
+      <ModalContextProvider>
+        <App />
+      </ModalContextProvider>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
