@@ -24,6 +24,18 @@ const projects = [
 		imgs: [assets.figma_clone_1, assets.figma_clone_2, assets.figma_clone_3, assets.figma_clone_4],
 		repo: 'https://github.com/DanielBello7/figma-website-clone',
 		link: 'https://figma.danielbello.dev'
+	},
+	{
+		id: "core-task",
+		title: 'CoreTask Task Manager',
+		tags: ['NodeJS', 'Typescript', 'NextJS', 'Framer Motion', 'Next Auth', 'MongoDB', 'Javascript', 'Jest'],
+		desc: `A simple task manager application with some advanced features`,
+		more: `A task manager to effortlessly manage tasks with a web application. Share, create, update, export, and import tasks seamlessly. Collaborate effortlessly and boost productivity. Streamline your workflow with intuitive features designed for efficient task management.`,
+		role: 'Full Stack',
+		img: assets.core_task_1,
+		imgs: [assets.core_task_2, assets.core_task_3, assets.core_task_4, assets.core_task_5],
+		repo: 'https://github.com/DanielBello7/time-tracker.git',
+		link: 'https://coretask.danielbello.dev'
 	}
 ]
 

@@ -16,6 +16,11 @@ import figma_clone_2 from "@/assets/2-figma-clone/figma-clone-2.png";
 import figma_clone_3 from "@/assets/2-figma-clone/figma-clone-3.png";
 import figma_clone_4 from "@/assets/2-figma-clone/figma-clone-4.png";
 
+import core_task_1 from "@/assets/3-coretask/coretask-img-1.png";
+import core_task_2 from "@/assets/3-coretask/coretask-img-2.png";
+import core_task_3 from "@/assets/3-coretask/coretask-img-3.png";
+import core_task_4 from "@/assets/3-coretask/coretask-img-4.png";
+import core_task_5 from "@/assets/3-coretask/coretask-img-5.png";
 
 export {
   user_img1,
@@ -31,6 +36,12 @@ export {
   figma_clone_1,
   figma_clone_2,
   figma_clone_3,
-  figma_clone_4
+  figma_clone_4,
+
+  core_task_1,
+  core_task_2,
+  core_task_3,
+  core_task_4,
+  core_task_5,
 }
 
