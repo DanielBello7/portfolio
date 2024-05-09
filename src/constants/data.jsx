@@ -50,41 +50,28 @@ const experience = [
 		id: 2,
 		title: 'Full Stack Developer',
 		location: 'Gallery of Code',
-		period: 'January 2022 - December 2022'
+		period: 'June 2021 - Feb 2024'
 	},
 	{
 		id: 3,
-		title: 'Frontend Engineer',
-		location: 'Gallery of Code',
-		period: 'June 2021 - December 2021'
-	},
-	{
-		id: 4,
 		title: 'Product Engineer',
 		location: 'Pan-African Renaissance Vocational Institute',
-		period: 'August 2021 - March 2022'
-	},
-	{
-		id: 5,
-		title: 'Full Stack Engineer',
-		location: 'inScript',
-		period: 'December 2020 - December 2021'
-	},
-	{
-		id: 6,
-		title: 'Junior Frontent Engineer',
-		location: 'inScript',
-		period: 'September 2019 - December 2020'
+		period: 'August 2021 - Feb 2022'
 	}
 ]
 
 const skills = [
 	'Full-Stack Development',
-	'Test-Driven Development',
+	'Backend Development',
 	'CI/CD',
 	'RESTful API',
+	'Test-Driven Development',
+	'Github Actions',
 	'JavaScript',
 	'TypeScript',
+	'Kotlin',
+	'Frontend Development',
+	'Python',
 	'C#',
 	'NodeJS',
 	'ReactJS',
@@ -93,8 +80,11 @@ const skills = [
 	'Android Development',
 	'React Native',
 	'Bootstrap 5',
+	'Github',
 	'Tailwind',
+	'Linux',
 	'ASP.NET-CORE',
+	'.NET',
 	'Digital Ocean',
 	'Docker',
 	'Firebase',
