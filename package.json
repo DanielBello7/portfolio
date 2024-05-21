@@ -8,7 +8,8 @@
     "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "deploy": "npm run build && pm2 startOrRestart ecosystem.config.cjs"
+    "deploy": "npm run build && pm2 startOrRestart ecosystem.config.cjs",
+    "start": "serve dist -p 9001 -s"
   },
   "dependencies": {
     "@types/node": "^20.11.16",
@@ -20,7 +21,8 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",
     "react-intl": "^6.4.4",
-    "react-router-dom": "^6.22.0"
+    "react-router-dom": "^6.22.0",
+    "serve": "^14.2.3"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",

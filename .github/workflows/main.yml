@@ -1,0 +1,69 @@
+name: Portfolio Deployment Pipeline
+on: 
+    push:
+        branches:
+            -   main
+defaults: 
+    run:
+        shell: bash
+        working-directory: ./
+jobs:
+    test-build:
+        runs-on: ubuntu-latest
+        steps:
+            -   name: Checkout Repository
+                uses: actions/checkout@v4
+            -   name: Install Depencencies
+                run: npm install
+            -   name: Test Project's Build
+                run: npm run build
+    push-docker-image:
+        runs-on: ubuntu-latest
+        needs: ['test-build']
+        steps:
+            -   name: checkout repository
+                uses: actions/checkout@v4
+            -   name: Login to DockerHub
+                uses: docker/login-action@v3
+                with:
+                    username: ${{ secrets.DOCKERHUB_USERNAME }}
+                    password: ${{ secrets.DOCKERHUB_PASSWORD }}
+            -   name: Extract Metadata (tags, labels) for Docker
+                id: meta
+                uses: docker/metadata-action@v5
+                with:
+                    images: pascallian/portfolio-v1
+            -   name: Build and Push Image to DockerHub
+                uses: docker/build-push-action@v5
+                with:
+                    context: .
+                    push: true
+                    tags:  ${{ steps.meta.outputs.tags }}
+                    labels: ${{ steps.meta.outputs.labels }}
+    deploy:
+        runs-on: ubuntu-latest
+        needs: ['test-build', 'push-docker-image']
+        steps:
+            -   name: Setup Node
+                uses: actions/setup-node@v3
+                with:
+                    node-version: 20.6.1
+            -   name: Reload Bash
+                run:  |
+                    source ~/.bashrc
+                    npm --version
+                    node --version
+            -   name: 'deploy'
+                uses: appleboy/ssh-action@v1.0.3
+                with:
+                    host: ${{secrets.SSH_HOST}}
+                    username: ${{secrets.SSH_USERNAME}}
+                    key: ${{secrets.SSH_KEY}}
+                    port: ${{secrets.SSH_PORT}}
+                    script: |
+                        ${{secrets.SSH_DIR_COMMAND}}
+                        ${{secrets.SSH_DIR_COMMAND_2}}
+                        export NVM_DIR=~/.nvm
+                        source ~/.nvm/nvm.sh
+                        npm install
+                        npm run deploy
