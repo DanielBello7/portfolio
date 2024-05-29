@@ -21,8 +21,11 @@ jobs:
         runs-on: ubuntu-latest
         needs: ['test-build']
         steps:
-            -   name: checkout repository
+            -   name: Checkout Repository
                 uses: actions/checkout@v4
+            -   name: Add env variables for build
+                run: |
+                    echo "${{ secrets.ENV_FILES }}" | tr -d '\r' > .env
             -   name: Login to DockerHub
                 uses: docker/login-action@v3
                 with:
