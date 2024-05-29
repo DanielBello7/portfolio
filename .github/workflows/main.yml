@@ -52,11 +52,10 @@ jobs:
                     key: ${{secrets.SSH_KEY}}
                     port: ${{secrets.SSH_PORT}}
                     script: |
-                        sudo su
                         cd
                         cd app
-                        docker-compose stop server
-                        docker container rm portfolio-app
-                        docker image rm pascallian/portfolio-v1:main
-                        docker pull pascallian/portfolio-v1:main
-                        docker-compose up -d server
+                        sudo docker-compose stop portfolio
+                        sudo docker container rm portfolio
+                        sudo docker image rm pascallian/portfolio-v1:main
+                        sudo docker pull pascallian/portfolio-v1:main
+                        sudo docker-compose up -d portfolio
