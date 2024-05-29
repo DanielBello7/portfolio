@@ -44,16 +44,7 @@ jobs:
         runs-on: ubuntu-latest
         needs: ['test-build', 'push-docker-image']
         steps:
-            -   name: Setup Node
-                uses: actions/setup-node@v3
-                with:
-                    node-version: 20.6.1
-            -   name: Reload Bash
-                run:  |
-                    source ~/.bashrc
-                    npm --version
-                    node --version
-            -   name: 'deploy'
+            -   name: download image
                 uses: appleboy/ssh-action@v1.0.3
                 with:
                     host: ${{secrets.SSH_HOST}}
@@ -61,4 +52,11 @@ jobs:
                     key: ${{secrets.SSH_KEY}}
                     port: ${{secrets.SSH_PORT}}
                     script: |
-                        echo 'hello'
+                        sudo su
+                        cd
+                        cd app
+                        docker-compose stop server
+                        docker container rm portfolio-app
+                        docker image rm pascallian/portfolio-v1:main
+                        docker pull pascallian/portfolio-v1:main
+                        docker-compose up -d server
