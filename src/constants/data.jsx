@@ -90,7 +90,6 @@ const skills = [
 	'Firebase',
 	'MongoDB',
 	'MySQL',
-	'DevOps',
 	'AWS'
 ]
 
