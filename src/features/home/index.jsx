@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { variables } from "../../constants/";
 import Hero from "./hero";
 import Contact from "./contact";
 import Projects from "./projects";
@@ -13,6 +14,7 @@ export default function Home() {
       exit={{ opacity: 0 }}
     >
       <Hero />
+      <p>{variables.MAIL_API_KEY}</p>
       <Projects />
       <Resume />
       <Contact />
