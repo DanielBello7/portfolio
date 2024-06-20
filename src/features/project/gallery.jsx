@@ -7,9 +7,8 @@ export default function Gallery(props) {
   const { project } = props;
 
   const imgs = project.imgs?.map((img, index) => (
-    <motion.div className='col-12 col-md-12 col-lg-6 mb-4' key={index}
-      variants={item}>
-      <img src={img} className="more-img shadow rounded-3 border" alt="short-imgs" />
+    <motion.div className='col-12 col-md-12 col-lg-6 mb-4' key={index} variants={item}>
+      <img src={img} className="more-img shadow border" alt="short-imgs" />
     </motion.div>
   ));
 
@@ -22,8 +21,7 @@ export default function Gallery(props) {
       </motion.div>
 
       <div className='w-100 my-5 row m-0 p-0 g-4 d-flex flex-row align-items-center justify-content-between'>
-        <motion.div className='w-100 row col-12 col-md-6 col-lg-6' initial="hidden" whileInView="show"
-          exit="hidden" variants={container} viewport={{ once: true }}>
+        <motion.div className='w-100 row col-12 col-md-6 col-lg-6' initial="hidden" whileInView="show" exit="hidden" variants={container} viewport={{ once: true }}>
           {imgs}
         </motion.div>
       </div>

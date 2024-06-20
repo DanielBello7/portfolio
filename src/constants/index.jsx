@@ -1,4 +1,4 @@
-import { projects, experience, skills } from './data';
+import { projects, experience, skills, skills2 } from './data';
 import * as assets from './assets';
 import * as variables from './variables';
 
@@ -7,6 +7,7 @@ export {
   projects,
   experience,
   skills,
+  skills2,
   variables
 }
 

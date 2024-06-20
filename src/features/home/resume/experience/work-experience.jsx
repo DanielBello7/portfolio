@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { item } from "./animation";
+import { item } from "../animation";
 
 export default function WorkExperience(props) {
   const {

@@ -17,7 +17,7 @@ const projects = [
 		id: "figma-store-clone",
 		title: 'Figma Store Clone',
 		tags: ['NodeJS', 'Typescript', 'ViteJS', 'Framer Motion'],
-		desc: `A near perfrct re-make for the figma store website.`,
+		desc: `A near perfect re-make for the figma store website.`,
 		more: `This was an attempt to remake the simple frontend functionalities the site used for it's interface, using raw code and not packages as much as possible`,
 		role: 'Frontend Engineer',
 		img: assets.figma_clone_1,
@@ -36,6 +36,18 @@ const projects = [
 		imgs: [assets.core_task_2, assets.core_task_3, assets.core_task_4, assets.core_task_5],
 		repo: 'https://github.com/DanielBello7/time-tracker.git',
 		link: 'https://coretask.danielbello.dev'
+	},
+	{
+		id: "bus-t-mobile",
+		title: 'BUS-T Mobile Application',
+		tags: ['React Native', 'Typescript', 'MongoDB', 'Javascript', 'Jest'],
+		desc: `A mobile application for the BUS-T transportation service, using React Native and Typescript.`,
+		more: `BUS-T is a route providing system, that allows bus companies and other transportation services in Nigeria to access route defining systems for their transportation means and display them to the public, it also allows for the public to access these routes and information relating to the providers. This is the mobile app that is used by the clients. I built this using typescript with react native.`,
+		role: 'Full Stack',
+		img: assets.bus_t_mobile_1,
+		imgs: [assets.bus_t_mobile_2, assets.bus_t_mobile_3, assets.bus_t_mobile_4, assets.bus_t_mobile_5],
+		repo: null,
+		link: 'https://apps.apple.com/us/app/bus-t/id6482978976'
 	}
 ]
 
@@ -55,7 +67,7 @@ const experience = [
 	{
 		id: 3,
 		title: 'Product Engineer',
-		location: 'Pan-African Renaissance Vocational Institute',
+		location: 'P.A.R.V.I',
 		period: 'August 2021 - Feb 2022'
 	}
 ]
@@ -93,5 +105,76 @@ const skills = [
 	'AWS'
 ]
 
-export { projects, experience, skills };
+const skills2 = [
+	{
+		id: 0,
+		title: "Languages",
+		values: [
+			'Javascript',
+			'Typescript',
+			'Kotlin',
+			'HTML',
+			'C#',
+			'CSS',
+		]
+	},
+	{
+		id: 1,
+		title: "Skills",
+		values: [
+			'Full-Stack Development',
+			'Frontend Development',
+			'Backend Development',
+			'Behavior-Driven Development',
+			'CI/CD',
+			'Test-Driven Development',
+			'Mobile Development',
+			'Android Development',
+			'RESTful API',
+		]
+	},
+	{
+		id: 2,
+		title: "Frameworks",
+		values: [
+			'ReactJS',
+			'React Native',
+			'ExpressJS',
+			'NextJS',
+			'NestJS',
+			'Tailwind CSS',
+			'Mud Blazor',
+			'Blazor',
+			'.NET-CORE',
+			'ASP.NET-CORE',
+			'Redis',
+			'Bootstrap 5',
+		]
+	},
+	{
+		id: 3,
+		title: "Database Systems",
+		values: [
+			'Firebase Firestore',
+			'MongoDB',
+			'MySQL',
+			'Postgres SQL',
+			'SQLite',
+		]
+	},
+	{
+		id: 4,
+		title: "DevOps, Deployment & Source Code Management",
+		values: [
+			'Github',
+			'Github Actions',
+			'Digital Ocean',
+			'Docker',
+			'NGINX',
+			'AWS'
+		]
+	}
+]
+
+export { projects, experience, skills, skills2 };
 

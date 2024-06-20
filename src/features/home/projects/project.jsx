@@ -32,7 +32,7 @@ export default function Project(props) {
 			variants={item}>
 			<div className='w-100' id="asset-img" onClick={HandleNavigation} style={{ height: '55%' }}>
 				<img
-					className="w-100 border border-2 rounded-4 mb-2 h-100 asst-img"
+					className="w-100 border border-dark mb-2 h-100 asst-img"
 					src={img}
 					style={{ objectFit: 'cover' }}
 					alt="asset-img"

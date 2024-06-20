@@ -9,7 +9,7 @@ export default function Footer() {
         <span>
           <FormattedMessage id="footerTitle" />
         </span>
-        <span className='ms-1 text-dark fw-bold'>
+        <span className='ms-1 text-dark fw-bold' style={{ letterSpacing: "-1.4px" }}>
           <FormattedMessage id="footerSub" />
         </span>
       </p>

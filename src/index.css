@@ -32,8 +32,7 @@ body {
 }
 
 .txts {
-  letter-spacing: -2px;
-  font-weight: bold;
+  letter-spacing: -0.5px;
 }
 
 #text1 {
@@ -187,8 +186,8 @@ body {
 }
 
 .title {
-  font-size: 8rem;
-  font-weight: bold;
+  font-size: 6rem;
+  font-weight: 700;
   letter-spacing: -10px;
 }
 
@@ -206,7 +205,7 @@ body {
 .desc {
   font-size: 1.2rem;
   line-height: 25px;
-  letter-spacing: -1.5px;
+  letter-spacing: -0.2px;
 }
 
 #test {
