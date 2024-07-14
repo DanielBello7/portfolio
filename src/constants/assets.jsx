@@ -30,6 +30,27 @@ import bus_t_mobile_3 from "@/assets/4-bus-t-mobile/bus-t-mobile-03.png";
 import bus_t_mobile_4 from "@/assets/4-bus-t-mobile/bus-t-mobile-04.png";
 import bus_t_mobile_5 from "@/assets/4-bus-t-mobile/bus-t-mobile-05.png";
 
+/** bus-t web app */
+import bus_t_web_1 from "@/assets/5-bus-t-web/bus-t-shot-1.png";
+import bus_t_web_2 from "@/assets/5-bus-t-web/bus-t-shot-2.png";
+import bus_t_web_3 from "@/assets/5-bus-t-web/bus-t-shot-3.png";
+import bus_t_web_4 from "@/assets/5-bus-t-web/bus-t-shot-4.png";
+import bus_t_web_5 from "@/assets/5-bus-t-web/bus-t-shot-5.png";
+
+/** case-law */
+import case_law_1 from "@/assets/6-case-law/case-law-shot-1.png";
+import case_law_2 from "@/assets/6-case-law/case-law-shot-2.png";
+import case_law_3 from "@/assets/6-case-law/case-law-shot-3.png";
+import case_law_4 from "@/assets/6-case-law/case-law-shot-4.png";
+import case_law_5 from "@/assets/6-case-law/case-law-shot-5.png";
+
+/** tracer */
+import tracer_1 from "@/assets/7-tracer/tracer-shot-1.png";
+import tracer_2 from "@/assets/7-tracer/tracer-shot-2.png";
+import tracer_3 from "@/assets/7-tracer/tracer-shot-3.png";
+import tracer_4 from "@/assets/7-tracer/tracer-shot-4.png";
+import tracer_5 from "@/assets/7-tracer/tracer-shot-5.png";
+
 export {
   user_img1,
   user_img2,
@@ -57,5 +78,23 @@ export {
   bus_t_mobile_3,
   bus_t_mobile_4,
   bus_t_mobile_5,
+
+  bus_t_web_1,
+  bus_t_web_2,
+  bus_t_web_3,
+  bus_t_web_4,
+  bus_t_web_5,
+
+  case_law_1,
+  case_law_2,
+  case_law_3,
+  case_law_4,
+  case_law_5,
+
+  tracer_1,
+  tracer_2,
+  tracer_3,
+  tracer_4,
+  tracer_5,
 }
 

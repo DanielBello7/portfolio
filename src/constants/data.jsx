@@ -30,7 +30,7 @@ const projects = [
 		title: 'CoreTask Task Manager',
 		tags: ['NodeJS', 'Typescript', 'NextJS', 'Framer Motion', 'Next Auth', 'MongoDB', 'Javascript', 'Jest'],
 		desc: `A simple task manager application with some advanced features`,
-		more: `A task manager to effortlessly manage tasks with a web application. Share, create, update, export, and import tasks seamlessly. Collaborate effortlessly and boost productivity. Streamline your workflow with intuitive features designed for efficient task management.`,
+		more: `A task manager to effortlessly manage tasks with a web application. Share, create, update, export, and import tasks seamlessly. Collaborate effortlessly and boost productivity. I built this as a side project to explore the feature of smooth transitions within all parts of the application. I handled the project from design to completion. `,
 		role: 'Full Stack',
 		img: assets.core_task_1,
 		imgs: [assets.core_task_2, assets.core_task_3, assets.core_task_4, assets.core_task_5],
@@ -42,12 +42,48 @@ const projects = [
 		title: 'BUS-T Mobile Application',
 		tags: ['React Native', 'Typescript', 'MongoDB', 'Javascript', 'Jest'],
 		desc: `A mobile application for the BUS-T transportation service, using React Native and Typescript.`,
-		more: `BUS-T is a route providing system, that allows bus companies and other transportation services in Nigeria to access route defining systems for their transportation means and display them to the public, it also allows for the public to access these routes and information relating to the providers. This is the mobile app that is used by the clients. I built this using typescript with react native.`,
+		more: `BUS-T is a route providing system, that allows bus companies and other transportation services in Nigeria to access route defining systems for their transportation means and display them to the public, it also allows for the public to access these routes and information relating to the providers. I built the mobile app myself while working with designers on the team for the UI and UX, i also designed the architecture myself which made the process of building it smoother.`,
 		role: 'Full Stack',
 		img: assets.bus_t_mobile_1,
 		imgs: [assets.bus_t_mobile_2, assets.bus_t_mobile_3, assets.bus_t_mobile_4, assets.bus_t_mobile_5],
 		repo: null,
 		link: 'https://apps.apple.com/us/app/bus-t/id6482978976'
+	},
+	{
+		id: "bus-t-web",
+		title: 'BUS-T Web Application',
+		tags: ['NextJS', 'Typescript', 'MongoDB', 'Javascript', 'Jest'],
+		desc: `A web application for the BUS-T transportation service, using NextJS.`,
+		more: `BUS-T is a route providing system, that allows bus companies and other transportation services in Nigeria to access route defining systems for their transportation means and display them to the public, it also allows for the public to access these routes and information relating to the providers. I worked alone on this project building both this web app, the mobile app and the server while working with other designers for the UI and UX.`,
+		role: 'Full Stack',
+		img: assets.bus_t_web_1,
+		imgs: [assets.bus_t_web_2, assets.bus_t_web_3, assets.bus_t_web_4, assets.bus_t_web_5],
+		repo: null,
+		link: 'https://bus-t.site'
+	},
+	{
+		id: "case-law",
+		title: 'Case Law Repository',
+		tags: ['ReactJS', 'Typescript', 'MongoDB', 'ViteJS', 'Mocha', 'Jest', 'Postman'],
+		desc: `A repository for legal documents, the system also provides a detailed search system for professional users who subscribe to the service.`,
+		more: `With over 2000 active users and 750 documents uploaded, Case Law Repository is a web application built to store case documents and make them available for public and professional use. The system also allows for specific search using text and relevant keywords and phrases amongst other documents. I worked on this with a team for the analytics and design but i built the frontend and backend for this application myself.`,
+		role: 'Full Stack',
+		img: assets.case_law_1,
+		imgs: [assets.case_law_2, assets.case_law_3, assets.case_law_4, assets.case_law_5],
+		repo: null,
+		link: 'http://caselaw.moj.dl.gov.ng'
+	},
+	{
+		id: "tracer-ng",
+		title: 'Tracer Study NG',
+		tags: ['Notion', 'Postman', 'MongoDB', 'Javascript', 'Typescript'],
+		desc: `A tracer study programme application for part-time students enrolling under a partiular organization, aiming for jobs and other opportunities while learning.`,
+		more: `With over 500 students enrolled, Tracer study triples as a school management system, mentor programme system, and a tracer study system for the students under the organization. I worked as the Software architect who designed the core system and controlled features and the product, i also helped function as the interface for the backend and the frontend engineers on the project bringing the project from idea to completion`,
+		role: 'Software Architect',
+		img: assets.tracer_1,
+		imgs: [assets.tracer_2, assets.tracer_3, assets.tracer_4, assets.tracer_5],
+		repo: null,
+		link: 'https://app.tracer.ng'
 	}
 ]
 
