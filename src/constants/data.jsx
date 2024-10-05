@@ -61,18 +61,18 @@ const projects = [
 		repo: null,
 		link: 'https://bus-t.site'
 	},
-	{
-		id: "case-law",
-		title: 'Case Law Repository',
-		tags: ['ReactJS', 'Typescript', 'MongoDB', 'ViteJS', 'Mocha', 'Jest', 'Postman'],
-		desc: `A repository for legal documents, the system also provides a detailed search system for professional users who subscribe to the service.`,
-		more: `With over 2000 active users and 750 documents uploaded, Case Law Repository is a web application built to store case documents and make them available for public and professional use. The system also allows for specific search using text and relevant keywords and phrases amongst other documents. I worked on this with a team for the analytics and design but i built the frontend and backend for this application myself.`,
-		role: 'Full Stack',
-		img: assets.case_law_1,
-		imgs: [assets.case_law_2, assets.case_law_3, assets.case_law_4, assets.case_law_5],
-		repo: null,
-		link: 'http://caselaw.moj.dl.gov.ng'
-	},
+	// {
+	// 	id: "case-law",
+	// 	title: 'Case Law Repository',
+	// 	tags: ['ReactJS', 'Typescript', 'MongoDB', 'ViteJS', 'Mocha', 'Jest', 'Postman'],
+	// 	desc: `A repository for legal documents, the system also provides a detailed search system for professional users who subscribe to the service.`,
+	// 	more: `With over 2000 active users and 750 documents uploaded, Case Law Repository is a web application built to store case documents and make them available for public and professional use. The system also allows for specific search using text and relevant keywords and phrases amongst other documents. I worked on this with a team for the analytics and design but i built the frontend and backend for this application myself.`,
+	// 	role: 'Full Stack',
+	// 	img: assets.case_law_1,
+	// 	imgs: [assets.case_law_2, assets.case_law_3, assets.case_law_4, assets.case_law_5],
+	// 	repo: null,
+	// 	link: 'http://caselaw.moj.dl.gov.ng'
+	// },
 	{
 		id: "tracer-ng",
 		title: 'Tracer Study NG',

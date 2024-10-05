@@ -16,12 +16,15 @@ export default function Eduction() {
           <h5 className='fw-bold txt h4 mt-5'>
             <FormattedMessage id="resumeResult" />
           </h5>
-          <h5 className='txt h4'>
-            <FormattedMessage id="resumeLocation" />
-          </h5>
           <h5 className='txt h5'>
-            <FormattedMessage id="resumePeriod" />
+            <FormattedMessage id="resumeDescription" />
           </h5>
+          {/* <h5 className='txt h4'>
+            <FormattedMessage id="resumeLocation" />
+          </h5> */}
+          {/* <h5 className='txt h5'>
+            <FormattedMessage id="resumePeriod" />
+          </h5> */}
         </motion.div>
       </div>
 

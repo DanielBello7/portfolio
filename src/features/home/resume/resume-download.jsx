@@ -9,7 +9,7 @@ export default function ResumeDownload() {
       <p>
         <FormattedMessage id="resumeInfo" />
       </p>
-      <a href="/DanielBelloResume.pdf" download="Resume.pdf" className='btn btn-dark px-4'>
+      <a href="/DanielBelloCV.pdf" download="Resume.pdf" className='btn btn-dark px-4'>
         <FaDownload className='me-2' />
         <span>
           <FormattedMessage id="resumeDownload" />
@@ -18,4 +18,3 @@ export default function ResumeDownload() {
     </motion.div>
   )
 }
-
